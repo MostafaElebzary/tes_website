@@ -9,6 +9,22 @@
 @if(session('lang') == 'en')
 
 
+        <style>
+
+            :root {
+                --main-font-family: 'Open Sans', sans-serif;
+                --heading-font-family: 'Jost', sans-serif;
+                --monoton-font-family: 'Monoton', cursive;
+                --main-color: #E7AB1D;
+                --optional-color: #3E019A;
+                --white-color: #ffffff;
+                --black-color: #14042C;
+                --paragraph-color: #646464;
+                --font-size: 16px;
+                --transition: .6s;
+                --btn-gradient-color: radial-gradient(circle, #E7AB1D, #f8c600, #eed900, #e0ec00, #cdff05);
+            }
+        </style>
     <!-- Links of CSS files -->
         <link rel="stylesheet" href="{{url('/')}}/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{url('/')}}/assets/css/aos.css">
