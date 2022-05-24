@@ -36,6 +36,7 @@ Route::get('lang/{lang}', function ($lang) {
         session()->put('lang', 'ar');
         App::setLocale('ar');
 
+
     }
 
 
