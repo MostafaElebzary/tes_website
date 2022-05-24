@@ -196,7 +196,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-12">
                     <div class="services-section-content" data-aos="fade-down" data-aos-delay="80" data-aos-duration="800" data-aos-once="true">
-                        <div class="services-bg-text">{{trans('lang.Services')}}</div>
+                        <div class="services-bg-text">Services</div>
                         <span>{{trans('lang.Services')}}</span>
                         <h3>We Provide the Best Quality <b>Services</b> <span class="overlay"></span></h3>
                         <p>We are technology solutions providing company all over the world doing over 40 years.</p>
