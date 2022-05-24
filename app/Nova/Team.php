@@ -48,7 +48,7 @@ class Team extends Resource
             Text::make(trans('lang.facebook'), 'facebook')->rules('url')->hideFromIndex(),
             Text::make(trans('lang.twitter'), 'twitter')->rules('url')->hideFromIndex(),
             Text::make(trans('lang.instagram'), 'instagram')->rules('url')->hideFromIndex(),
-            Image::make(trans('lang.image'), 'image')->rules('required'),
+            Image::make(trans('lang.image'), 'image')->creationRules('required'),
         ];
     }
 

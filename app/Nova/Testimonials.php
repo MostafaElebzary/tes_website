@@ -63,7 +63,7 @@ class Testimonials extends Resource
             ])->min(0)->max(5)->increment(1)->rules('required'),
             Trix::make(trans('lang.body_ar'), 'body_ar')->rules('required'),
             Trix::make(trans('lang.body_en'), 'body_en')->rules('required'),
-            Avatar::make(trans('lang.user_image'), 'user_image')->rules('required'),
+            Avatar::make(trans('lang.user_image'), 'user_image')->creationRules('required'),
         ];
     }
 

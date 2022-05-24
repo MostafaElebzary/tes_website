@@ -51,7 +51,7 @@ class Page extends Resource
             Text::make(trans('lang.title_en'), 'title_en')->rules('required'),
             Trix::make(trans('lang.body_ar'), 'body_ar')->rules('required'),
             Trix::make(trans('lang.body_en'), 'body_en')->rules('required'),
-            Image::make(trans('lang.image'), 'image')->rules('required'),
+            Image::make(trans('lang.image'), 'image')->creationRules('required'),
 
         ];
     }

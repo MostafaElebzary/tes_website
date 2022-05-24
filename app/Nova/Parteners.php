@@ -42,7 +42,7 @@ class Parteners extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Image::make(trans('lang.image'), 'image')->rules('required'),
+            Image::make(trans('lang.image'), 'image')->creationRules('required'),
         ];
     }
 
