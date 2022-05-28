@@ -2,6 +2,7 @@
 
 namespace App\Nova;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
@@ -31,7 +32,7 @@ class Setting extends Resource
      * @var array
      */
     public static $search = [
-        'key',
+        'key','value'
     ];
 
     /**
@@ -42,11 +43,13 @@ class Setting extends Resource
      */
     public function fields(Request $request)
     {
+        $href = $this->modelsHref;
         return [
             ID::make(__('ID'), 'id')->sortable(),
             Text::make(trans('lang.key'), 'key')->creationRules('required')->readonlyOnUpdate(),
             InlineText::make(trans('lang.value'), 'value')->rules('required')->inlineOnIndex(),
-            Image::make(trans('lang.image'), 'image'),
+            Image::make(trans('lang.image'), 'image')->rounded()->prunable(),
+
         ];
     }
 
@@ -94,5 +97,15 @@ class Setting extends Resource
         return [];
     }
 
+    const DEFAULT_INDEX_ORDER = 'key';
+
+    public static function indexQuery(NovaRequest $request, $query)
+    {
+        $query->when(empty($request->get('orderBy')), function(Builder $q) {
+            $q->getQuery()->orders = [];
+
+            return $q->orderBy(static::DEFAULT_INDEX_ORDER,'asc');
+        });
+    }
 
 }
