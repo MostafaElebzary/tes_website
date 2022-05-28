@@ -9,6 +9,16 @@
 @if(session('lang') == 'en')
 
 
+            .truncate {
+                display: -webkit-box;
+                max-width: 450px;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+
+            }
+
+
         <style>
 
             :root {
@@ -104,9 +114,9 @@
             <div class="container">
                 <div class="main-responsive-menu">
                     <div class="logo">
-                        <a href="index.html">
-                            <img src="{{url('/')}}/assets/images/black-logo.png" class="black-logo" alt="image">
-                            <img src="{{url('/')}}/assets/images/logo.png" class="white-logo" alt="image">
+                        <a href="/">
+                            <img src="storage/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
+                            <img src="storage/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
                         </a>
                     </div>
                 </div>
@@ -117,8 +127,8 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="/">
-                        <img src="{{url('/')}}/assets/images/black-logo.png" class="black-logo" alt="image">
-                        <img src="{{url('/')}}/assets/images/logo.png" class="white-logo" alt="image">
+                        <img src="storage/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
+                        <img src="storage/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -275,28 +285,27 @@
             <button type="button" class="close" data-bs-dismiss="modal"><i class="ri-close-line"></i></button>
 
             <div class="modal-body">
-                <a href="index.html">
-                    <img src="{{url('/')}}/assets/images/black-logo.png" class="black-logo" alt="image">
-                    <img src="{{url('/')}}/assets/images/logo.png" class="white-logo" alt="image">
+                <a href="/">
+                    <img src="storage/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
+                    <img src="storage/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
                 </a>
                 <div class="sidebar-content">
-                    <h3>About Us</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.</p>
+                    <h3> @if(session('lang') == 'en') {{about_us()->title_en}} @else {{about_us()->title_ar}}@endif</h3>
+                    <p> @if(session('lang') == 'en')  {!! about_us()->body_en !!} @else  {!! about_us()->body_ar !!} @endif</p>
 
                     <div class="sidebar-btn">
                         <a href="/contact-us" class="default-btn">Let’s Talk</a>
                     </div>
                 </div>
                 <div class="sidebar-contact-info">
-                    <h3>Contact Information</h3>
+                    <h3>@if(session('lang') == 'en') {{settings_value("contact_us_title_en")}} @else {{settings_value("contact_us_title_ar")}} @endif </h3>
 
                     <ul class="info-list">
-                        <li><i class="ri-phone-fill"></i> <a href="tel:9901234567">+990-123-4567</a></li>
+                        <li><i class="ri-phone-fill"></i> <a href="tel: {{settings_value("call_us")}}"> {{settings_value("call_us")}}</a></li>
 
-                        <li><i class="ri-mail-line"></i> <a href="mailto:coze@gmail.com">coze@gmail.com</a></li>
+                        <li><i class="ri-mail-line"></i> <a href="mailto: {{settings_value("email")}}"> {{settings_value("email")}}</a></li>
 
-                        <li><i class="ri-map-pin-line"></i> 413 North Las Vegas, NV 89032</li>
+                        <li><i class="ri-map-pin-line"></i> @if(session('lang') == 'en') {{settings_value("address_en")}} @else {{settings_value("address_ar")}} @endif</li>
                     </ul>
                 </div>
                 <ul class="sidebar-social-list">

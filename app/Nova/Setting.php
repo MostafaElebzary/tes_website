@@ -103,7 +103,6 @@ class Setting extends Resource
     {
         $query->when(empty($request->get('orderBy')), function(Builder $q) {
             $q->getQuery()->orders = [];
-
             return $q->orderBy(static::DEFAULT_INDEX_ORDER,'asc');
         });
     }
