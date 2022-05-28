@@ -7,6 +7,7 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
+use Pdmfc\NovaFields\InlineText;
 
 class Setting extends Resource
 {
@@ -22,7 +23,7 @@ class Setting extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'key';
 
     /**
      * The columns that should be searched.
@@ -30,7 +31,7 @@ class Setting extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'key',
     ];
 
     /**
@@ -43,8 +44,8 @@ class Setting extends Resource
     {
         return [
             ID::make(__('ID'), 'id')->sortable(),
-            Text::make(trans('lang.key'), 'key')->rules('required'),
-            Text::make(trans('lang.value'), 'value')->rules('required'),
+            Text::make(trans('lang.key'), 'key')->creationRules('required')->readonlyOnUpdate(),
+            InlineText::make(trans('lang.value'), 'value')->rules('required')->inlineOnIndex(),
             Image::make(trans('lang.image'), 'image'),
         ];
     }
@@ -92,4 +93,6 @@ class Setting extends Resource
     {
         return [];
     }
+
+
 }

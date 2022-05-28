@@ -1,8 +1,8 @@
 <dropdown-trigger class="h-9 flex items-center">
     @isset($user->email)
         <img
-            src="https://secure.gravatar.com/avatar/{{ md5(\Illuminate\Support\Str::lower($user->email)) }}?size=512"
-            class="rounded-full w-8 h-8 mr-3"
+            src="{{url('storage/')}}/{{$settings->where('key','logo_light')->first()->image}}?size=256"
+            class="rounded-full w-14 h-8 mr-3"
         />
     @endisset
 
@@ -18,5 +18,6 @@
                 {{ __('Logout') }}
             </a>
         </li>
+
     </ul>
 </dropdown-menu>

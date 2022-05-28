@@ -59,8 +59,6 @@
                     <a v-if="@json(\Laravel\Nova\Nova::name() !== null)" href="{{ url('/nova/dashboards/main') }}" class="no-underline dim font-bold text-90 mr-6">
                         {{ \Laravel\Nova\Nova::name() }}
 
-
-
                     </a>
 
                     @if (count(\Laravel\Nova\Nova::globallySearchableResources(request())) > 0)
