@@ -23,7 +23,7 @@ class Service extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'title_ar';
 
     /**
      * The columns that should be searched.
