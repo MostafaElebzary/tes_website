@@ -25,7 +25,6 @@ Route::get('/contact-us', [HomeController::class, 'contact']);
 
 Route::get('lang/{lang}', function ($lang) {
 
-
     if (session()->has('lang')) {
         session()->forget('lang');
     }
@@ -38,7 +37,5 @@ Route::get('lang/{lang}', function ($lang) {
 
 
     }
-
-
     return back();
 });

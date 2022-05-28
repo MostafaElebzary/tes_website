@@ -11,5 +11,10 @@ class Category extends Model
 
     protected $guarded =[];
 
+    public function projects(){
+        return $this->hasMany(Project::class,'category_id');
+    }
+
+
 
 }
