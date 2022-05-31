@@ -22,7 +22,7 @@ class Category extends Resource
      *
      * @var string
      */
-    public static $title = 'title_en';
+    public static $title = 'title_ar';
 
 
     /**
@@ -31,7 +31,7 @@ class Category extends Resource
      * @var array
      */
     public static $search = [
-        'title_ar',
+        'title_ar','title_en'
     ];
 
     /**

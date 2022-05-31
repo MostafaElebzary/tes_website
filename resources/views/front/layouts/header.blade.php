@@ -9,17 +9,9 @@
 @if(session('lang') == 'en')
 
 
-            .truncate {
-                display: -webkit-box;
-                max-width: 450px;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-
-            }
-
 
         <style>
+
 
             :root {
                 --main-font-family: 'Open Sans', sans-serif;
@@ -74,6 +66,17 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
     @endif
+
+    <style>
+        .truncate {
+            display: -webkit-box;
+            max-width: 450px;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+        }
+    </style>
     @yield('css')
 
     <title>TES - @yield('title')</title>

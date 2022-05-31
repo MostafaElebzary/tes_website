@@ -24,7 +24,7 @@ class Project extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'title_ar';
 
     /**
      * The columns that should be searched.
@@ -32,7 +32,11 @@ class Project extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'title_ar',
+        'title_en',
+        'body_ar',
+        'body_en',
+
     ];
 
     /**
