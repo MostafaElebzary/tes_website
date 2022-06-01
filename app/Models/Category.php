@@ -15,7 +15,8 @@ class Category extends Model
     public function projects(){
         return $this->hasMany(Project::class,'category_id');
     }
-    protected $appends = ['title','body'];
+    protected $appends = ['title'];
+
 
     public function getTitleAttribute()
     {

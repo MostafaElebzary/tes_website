@@ -18,12 +18,15 @@ class Page extends Resource
      */
     public static $model = \App\Models\Page::class;
 
+
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
     public static $title = 'title_ar';
+
+    public static $priority = 1;
 
     /**
      * The columns that should be searched.

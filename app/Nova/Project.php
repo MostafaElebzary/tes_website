@@ -25,7 +25,7 @@ class Project extends Resource
      * @var string
      */
     public static $title = 'title_ar';
-
+    public static $priority = 2;
     /**
      * The columns that should be searched.
      *

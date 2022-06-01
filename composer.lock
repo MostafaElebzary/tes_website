@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "95dc4395e13eadf6233bf383c0364330",
+    "content-hash": "f40915c8524e68b302a0280dfb55285f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1006,6 +1006,57 @@
             "time": "2021-11-21T21:41:47+00:00"
         },
         {
+            "name": "gregoriohc/laravel-nova-theme-responsive",
+            "version": "v0.8.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gregoriohc/laravel-nova-theme-responsive.git",
+                "reference": "a37f8162872ea7483d2dec7091d29e49376df273"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gregoriohc/laravel-nova-theme-responsive/zipball/a37f8162872ea7483d2dec7091d29e49376df273",
+                "reference": "a37f8162872ea7483d2dec7091d29e49376df273",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Gregoriohc\\LaravelNovaThemeResponsive\\ThemeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gregoriohc\\LaravelNovaThemeResponsive\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gregorio Hernández Caso",
+                    "email": "gregoriohc@gmail.com",
+                    "homepage": "https://github.com/gregoriohc",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel Nova responsive theme.",
+            "homepage": "https://github.com/gregoriohc/laravel-nova-theme-responsive",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "abandoned": true,
+            "time": "2020-03-08T16:15:03+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "7.4.3",
             "source": {
@@ -1276,16 +1327,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.83.14",
+            "version": "v8.83.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "141cf126f1746c7264f59aa78c923a84eaab501e"
+                "reference": "bf8fbdd9061611b2c05562fa14f6987cc5145d78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/141cf126f1746c7264f59aa78c923a84eaab501e",
-                "reference": "141cf126f1746c7264f59aa78c923a84eaab501e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/bf8fbdd9061611b2c05562fa14f6987cc5145d78",
+                "reference": "bf8fbdd9061611b2c05562fa14f6987cc5145d78",
                 "shasum": ""
             },
             "require": {
@@ -1441,7 +1492,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2022-05-24T14:04:02+00:00"
+            "time": "2022-05-31T14:57:02+00:00"
         },
         {
             "name": "laravel/nova",
@@ -2115,47 +2166,6 @@
             "time": "2020-01-05T04:49:34+00:00"
         },
         {
-            "name": "mustafakhaleddev/nova-rtl-support",
-            "version": "V0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mustafakhaleddev/NovaRTL.git",
-                "reference": "a9a8684d3019e9cc07c9660a449b6c430b6ae4a9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mustafakhaleddev/NovaRTL/zipball/a9a8684d3019e9cc07c9660a449b6c430b6ae4a9",
-                "reference": "a9a8684d3019e9cc07c9660a449b6c430b6ae4a9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "MK\\NovaRTL\\NovaRTLServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "MK\\NovaRTL\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A Laravel Nova RTL support.",
-            "keywords": [
-                "laravel",
-                "nova"
-            ],
-            "time": "2019-05-01T20:13:56+00:00"
-        },
-        {
             "name": "nesbot/carbon",
             "version": "2.58.0",
             "source": {
@@ -2429,16 +2439,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.13.2",
+            "version": "v4.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "210577fe3cf7badcc5814d99455df46564f3c077"
+                "reference": "34bea19b6e03d8153165d8f30bba4c3be86184c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/210577fe3cf7badcc5814d99455df46564f3c077",
-                "reference": "210577fe3cf7badcc5814d99455df46564f3c077",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/34bea19b6e03d8153165d8f30bba4c3be86184c1",
+                "reference": "34bea19b6e03d8153165d8f30bba4c3be86184c1",
                 "shasum": ""
             },
             "require": {
@@ -2477,7 +2487,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2021-11-30T19:35:32+00:00"
+            "time": "2022-05-31T20:59:12+00:00"
         },
         {
             "name": "opis/closure",
@@ -2900,6 +2910,58 @@
                 "x509"
             ],
             "time": "2022-04-04T05:15:45+00:00"
+        },
+        {
+            "name": "pishran/nova-rtl-theme",
+            "version": "v1.5.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pishran/nova-rtl-theme.git",
+                "reference": "4f58dd7ac8159f78d23ce4d8fcebe99771e983ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pishran/nova-rtl-theme/zipball/4f58dd7ac8159f78d23ce4d8fcebe99771e983ab",
+                "reference": "4f58dd7ac8159f78d23ce4d8fcebe99771e983ab",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pishran\\NovaRtlTheme\\ThemeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Pishran\\NovaRtlTheme\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Farid Aghili",
+                    "email": "farid@pishranit.ir",
+                    "homepage": "https://www.faridaghili.ir",
+                    "role": "Developer"
+                }
+            ],
+            "description": "RTL layout for Laravel Nova.",
+            "homepage": "https://github.com/pishran/nova-rtl-theme",
+            "keywords": [
+                "laravel",
+                "nova",
+                "rtl",
+                "theme"
+            ],
+            "time": "2021-12-25T06:01:55+00:00"
         },
         {
             "name": "psr/container",

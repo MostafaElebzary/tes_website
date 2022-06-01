@@ -17,12 +17,28 @@ class Category extends Resource
      */
     public static $model = \App\Models\Category::class;
 
+
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
     public static $title = 'title_ar';
+
+//    public function icon()
+//    {
+//        return '';
+//    }
+
+    public static function label()
+    {
+        return trans('lang.Categories');
+    }
+
+    public static function singularLabel()
+    {
+        return trans('lang.Category');
+    }
 
 
     /**
