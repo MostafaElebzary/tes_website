@@ -12,5 +12,18 @@ return [
     'body_ar'=>"الوصف بالعربية",
     'body_en'=>"الوصف بالانجيزية",
     'image'=>"الصورة",
+    'Categories'=>"تصنيفات المشاريع",
+    'Contacts'=>"طلبات التواصل",
+    'Pages'=>"الصفحات",
+    'Parteners'=>"عملاؤنا ",
+    'Settings'=>"الاعدادات ",
+    'Sliders'=>"السليدر ",
+    'Subscribes'=>"الاشتراكات ",
+    'Teams'=>"فريق العمل ",
+    'Testimonials'=>"اراء العملاء ",
+    'Users'=>"المستخدمين ",
+    'Work Processes'=>"إجراءات العمل ",
+    'Resources'=>"المحتوى ",
+    'Dashboard'=>"الرئيسية ",
 
 ];

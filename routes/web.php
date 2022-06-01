@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Front\HomeController;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,9 +34,12 @@ Route::get('lang/{lang}', function ($lang) {
     if ($lang == 'en') {
         session()->put('lang', 'en');
         App::setLocale('en');
+//        Artisan::call('optimize');
+
     } else {
         session()->put('lang', 'ar');
         App::setLocale('ar');
+//        Artisan::call('optimize');
 
 
     }
