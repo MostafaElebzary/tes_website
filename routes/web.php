@@ -22,6 +22,8 @@ Route::get('/services', [HomeController::class, 'services']);
 Route::get('/projects', [HomeController::class, 'projects']);
 Route::get('/about-us', [HomeController::class, 'about']);
 Route::get('/contact-us', [HomeController::class, 'contact']);
+Route::post('/subscribe', [HomeController::class, 'Subscribe']);
+Route::post('/contact', [HomeController::class, 'Contact_us']);
 
 Route::get('lang/{lang}', function ($lang) {
 

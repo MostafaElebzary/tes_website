@@ -312,20 +312,21 @@
                     </ul>
                 </div>
                 <ul class="sidebar-social-list">
-                    <li><a href="#" target="_blank"><i class="ri-facebook-fill"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ri-twitter-fill"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ri-linkedin-fill"></i></a></li>
-                    <li><a href="#" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+                    <li><a href="{{ settings_value("facebook")}}" target="_blank"><i class="ri-facebook-fill"></i></a></li>
+                    <li><a href="{{ settings_value("twitter")}}" target="_blank"><i class="ri-twitter-fill"></i></a></li>
+                    <li><a href="{{ settings_value("youtube")}}" target="_blank"><i class="ri-youtube-fill"></i></a></li>
+                    <li><a href="{{ settings_value("instagram")}}" target="_blank"><i class="ri-instagram-fill"></i></a></li>
                 </ul>
-                <div class="contact-form">
-                    <h3>Ready to Get Started?</h3>
+                <div class="talk-content">
+                    <h3>{{trans('lang.Ready to Get Started?')}}</h3>
 
-                    <form id="contactForm">
+                    <form id="contactFormTwo-new" method="post" action="{{url('contact')}}">
+                        @csrf
                         <div class="row">
                             <div class="col-lg-12 col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" required
-                                           data-error="Please enter your name" placeholder="Your name">
+                                           data-error="Please enter your name" placeholder="{{trans('lang.Your name')}}">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -334,31 +335,31 @@
                                 <div class="form-group">
                                     <input type="email" name="email" class="form-control" required
                                            data-error="Please enter your email"
-                                           placeholder="Your email address">
+                                           placeholder="{{trans('lang.Your email address')}}">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
 
-                            <div class="col-lg-12 col-md-12">
-                                <div class="form-group">
-                                    <input type="text" name="phone_number" class="form-control" required
-                                           data-error="Please enter your phone number"
-                                           placeholder="Your phone number">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
+{{--                            <div class="col-lg-12 col-md-12">--}}
+{{--                                <div class="form-group">--}}
+{{--                                    <input type="text" name="phone_number" class="form-control" required--}}
+{{--                                           data-error="Please enter your phone number"--}}
+{{--                                           placeholder="Your phone number">--}}
+{{--                                    <div class="help-block with-errors"></div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
 
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
                                             <textarea name="message" class="form-control" cols="30" rows="6" required
                                                       data-error="Please enter your message"
-                                                      placeholder="Write your message..."></textarea>
+                                                      placeholder="{{trans('lang.Write your message')}}"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-12">
-                                <button type="submit" class="default-btn">Send Message<span></span></button>
+                                <button type="submit" class="default-btn">{{trans('lang.Send Message')}}<span></span></button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>

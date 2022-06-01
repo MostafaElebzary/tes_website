@@ -4,11 +4,13 @@ namespace App\Http\Controllers\Front;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Contact;
 use App\Models\Page;
 use App\Models\Partener;
 use App\Models\Project;
 use App\Models\Service;
 use App\Models\Slider;
+use App\Models\Subscribe;
 use App\Models\Team;
 use App\Models\Testimonials;
 use App\Models\WorkProcess;
@@ -57,5 +59,31 @@ class HomeController extends Controller
     {
         $data['title'] = trans('lang.Contact');
         return view('front.pages.contact', $data);
+    }
+
+    public function Subscribe(Request $request)
+    {
+        $data = $this->validate(\request(),
+            [
+                'email' => 'required|email',
+            ]);
+
+        Subscribe::create($data);
+
+        return redirect()->back();
+    }
+
+    public function Contact_us(Request $request)
+    {
+        $data = $this->validate(\request(),
+            [
+                'name' => 'required|string',
+                'email' => 'required|email',
+                'message' => 'required|string',
+            ]);
+
+        Contact::create($data);
+
+        return redirect()->back();
     }
 }
