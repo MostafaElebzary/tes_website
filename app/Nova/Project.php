@@ -36,6 +36,7 @@ class Project extends Resource
         'title_en',
         'body_ar',
         'body_en',
+        'url',
 
     ];
 

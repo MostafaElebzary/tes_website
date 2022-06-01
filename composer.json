@@ -16,9 +16,9 @@
         "laravel/framework": "^8.0",
         "laravel/nova": "~3.0",
         "laravel/tinker": "^2.0",
+        "mustafakhaleddev/nova-rtl-support": "^0.1.0",
         "nikaia/nova-rating-field": "^1.0",
         "pdmfc/nova-inline-text": "^1.2"
-
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",

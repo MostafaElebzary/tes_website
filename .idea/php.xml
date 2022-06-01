@@ -130,6 +130,7 @@
       <path value="$PROJECT_DIR$/vendor/nikaia/nova-rating-field" />
       <path value="$PROJECT_DIR$/vendor/pdmfc/nova-inline-text" />
       <path value="$PROJECT_DIR$/vendor/bytelaunch/readonly-on-update" />
+      <path value="$PROJECT_DIR$/vendor/mustafakhaleddev/nova-rtl-support" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />

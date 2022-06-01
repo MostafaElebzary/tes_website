@@ -34,6 +34,8 @@ class Service extends Resource
         'id',
         'title_ar',
         'title_en',
+        'body_ar',
+        'body_en',
     ];
 
     /**

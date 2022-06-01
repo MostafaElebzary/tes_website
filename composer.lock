@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fd64cd5e372f9e43ef4396c6cc534030",
+    "content-hash": "95dc4395e13eadf6233bf383c0364330",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2113,6 +2113,47 @@
             ],
             "abandoned": "brick/math",
             "time": "2020-01-05T04:49:34+00:00"
+        },
+        {
+            "name": "mustafakhaleddev/nova-rtl-support",
+            "version": "V0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mustafakhaleddev/NovaRTL.git",
+                "reference": "a9a8684d3019e9cc07c9660a449b6c430b6ae4a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mustafakhaleddev/NovaRTL/zipball/a9a8684d3019e9cc07c9660a449b6c430b6ae4a9",
+                "reference": "a9a8684d3019e9cc07c9660a449b6c430b6ae4a9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MK\\NovaRTL\\NovaRTLServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MK\\NovaRTL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Laravel Nova RTL support.",
+            "keywords": [
+                "laravel",
+                "nova"
+            ],
+            "time": "2019-05-01T20:13:56+00:00"
         },
         {
             "name": "nesbot/carbon",
