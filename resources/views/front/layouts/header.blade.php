@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-@if(session('lang') == 'en')
+    @if(session('lang') == 'en')
 
 
 
@@ -27,7 +27,7 @@
                 --btn-gradient-color: radial-gradient(circle, #E7AB1D, #f8c600, #eed900, #e0ec00, #cdff05);
             }
         </style>
-    <!-- Links of CSS files -->
+        <!-- Links of CSS files -->
         <link rel="stylesheet" href="{{url('/')}}/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{url('/')}}/assets/css/aos.css">
         <link rel="stylesheet" href="{{url('/')}}/assets/css/animate.min.css">
@@ -138,23 +138,28 @@
                         <ul class="navbar-nav ms-auto">
 
                             <li class="nav-item">
-                                <a href="/" class="nav-link @if(request()->segment(1) == "" || request()->segment(1) == "home") active @endif">{{trans('lang.Home')}}</a>
+                                <a href="/"
+                                   class="nav-link @if(request()->segment(1) == "" || request()->segment(1) == "home") active @endif">{{trans('lang.Home')}}</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="@if(request()->segment(1) == "" || request()->segment(1) == "home") #Services @else /services @endif" class="nav-link @if( request()->segment(1) == "services") active @endif">{{trans('lang.Services')}}</a>
+                                <a href="@if(request()->segment(1) == "" || request()->segment(1) == "home") #Services @else /services @endif"
+                                   class="nav-link @if( request()->segment(1) == "services") active @endif">{{trans('lang.Services')}}</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="@if(request()->segment(1) == "" || request()->segment(1) == "home") #projects @else /projects @endif" class="nav-link  @if( request()->segment(1) == "projects") active @endif">{{trans('lang.Projects')}}</a>
+                                <a href="@if(request()->segment(1) == "" || request()->segment(1) == "home") #projects @else /projects @endif"
+                                   class="nav-link  @if( request()->segment(1) == "projects") active @endif">{{trans('lang.Projects')}}</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="/about-us" class="nav-link @if( request()->segment(1) == "about-us") active @endif">{{trans('lang.AboutUs')}}</a>
+                                <a href="/about-us"
+                                   class="nav-link @if( request()->segment(1) == "about-us") active @endif">{{trans('lang.AboutUs')}}</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="/contact-us" class="nav-link @if( request()->segment(1) == "contact-us") active @endif">{{trans('lang.Contact')}}</a>
+                                <a href="/contact-us"
+                                   class="nav-link @if( request()->segment(1) == "contact-us") active @endif">{{trans('lang.Contact')}}</a>
                             </li>
 
 
@@ -304,18 +309,26 @@
                     <h3>@if(session('lang') == 'en') {{settings_value("contact_us_title_en")}} @else {{settings_value("contact_us_title_ar")}} @endif </h3>
 
                     <ul class="info-list">
-                        <li><i class="ri-phone-fill"></i> <a href="tel: {{settings_value("call_us")}}"> {{settings_value("call_us")}}</a></li>
+                        <li><i class="ri-phone-fill"></i> <a
+                                href="tel: {{settings_value("call_us")}}"> {{settings_value("call_us")}}</a></li>
 
-                        <li><i class="ri-mail-line"></i> <a href="mailto: {{settings_value("email")}}"> {{settings_value("email")}}</a></li>
+                        <li><i class="ri-mail-line"></i> <a
+                                href="mailto: {{settings_value("email")}}"> {{settings_value("email")}}</a></li>
 
-                        <li><i class="ri-map-pin-line"></i> @if(session('lang') == 'en') {{settings_value("address_en")}} @else {{settings_value("address_ar")}} @endif</li>
+                        <li>
+                            <i class="ri-map-pin-line"></i> @if(session('lang') == 'en') {{settings_value("address_en")}} @else {{settings_value("address_ar")}} @endif
+                        </li>
                     </ul>
                 </div>
                 <ul class="sidebar-social-list">
-                    <li><a href="{{ settings_value("facebook")}}" target="_blank"><i class="ri-facebook-fill"></i></a></li>
-                    <li><a href="{{ settings_value("twitter")}}" target="_blank"><i class="ri-twitter-fill"></i></a></li>
-                    <li><a href="{{ settings_value("youtube")}}" target="_blank"><i class="ri-youtube-fill"></i></a></li>
-                    <li><a href="{{ settings_value("instagram")}}" target="_blank"><i class="ri-instagram-fill"></i></a></li>
+                    <li><a href="{{ settings_value("facebook")}}" target="_blank"><i class="ri-facebook-fill"></i></a>
+                    </li>
+                    <li><a href="{{ settings_value("twitter")}}" target="_blank"><i class="ri-twitter-fill"></i></a>
+                    </li>
+                    <li><a href="{{ settings_value("youtube")}}" target="_blank"><i class="ri-youtube-fill"></i></a>
+                    </li>
+                    <li><a href="{{ settings_value("instagram")}}" target="_blank"><i class="ri-instagram-fill"></i></a>
+                    </li>
                 </ul>
                 <div class="talk-content">
                     <h3>{{trans('lang.Ready to Get Started?')}}</h3>
@@ -326,7 +339,8 @@
                             <div class="col-lg-12 col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="name" class="form-control" required
-                                           data-error="Please enter your name" placeholder="{{trans('lang.Your name')}}">
+                                           data-error="Please enter your name"
+                                           placeholder="{{trans('lang.Your name')}}">
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -340,14 +354,14 @@
                                 </div>
                             </div>
 
-{{--                            <div class="col-lg-12 col-md-12">--}}
-{{--                                <div class="form-group">--}}
-{{--                                    <input type="text" name="phone_number" class="form-control" required--}}
-{{--                                           data-error="Please enter your phone number"--}}
-{{--                                           placeholder="Your phone number">--}}
-{{--                                    <div class="help-block with-errors"></div>--}}
-{{--                                </div>--}}
-{{--                            </div>--}}
+                            {{--                            <div class="col-lg-12 col-md-12">--}}
+                            {{--                                <div class="form-group">--}}
+                            {{--                                    <input type="text" name="phone_number" class="form-control" required--}}
+                            {{--                                           data-error="Please enter your phone number"--}}
+                            {{--                                           placeholder="Your phone number">--}}
+                            {{--                                    <div class="help-block with-errors"></div>--}}
+                            {{--                                </div>--}}
+                            {{--                            </div>--}}
 
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group">
@@ -359,7 +373,8 @@
                             </div>
 
                             <div class="col-lg-12 col-md-12">
-                                <button type="submit" class="default-btn">{{trans('lang.Send Message')}}<span></span></button>
+                                <button type="submit" class="default-btn">{{trans('lang.Send Message')}}<span></span>
+                                </button>
                                 <div id="msgSubmit" class="h3 text-center hidden"></div>
                                 <div class="clearfix"></div>
                             </div>
