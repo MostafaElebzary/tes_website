@@ -34,7 +34,7 @@
             <ul class="projects-filter-menu">
                 <li class="filter" data-filter="all">All</li>
                 @foreach($categories as $category)
-                <li class="filter" data-filter=".{{$category->title_en}}">{{$category->title}}</li>
+                <li class="filter" data-filter=".cat-{{$category->id}}">{{$category->title}}</li>
 
                 @endforeach
             </ul>
@@ -42,7 +42,7 @@
 
             <div id="Container" class="row justify-content-center">
                 @foreach($projects as $project)
-                    <div class="col-lg-4 col-md-6 mix {{$project->category->title_en}} development web-design">
+                    <div class="col-lg-6 col-md-8 mix cat-{{$project->category->id}} development product-design">
                         <div class="single-projects-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                              data-aos-once="true">
                             <div class="projects-image">
