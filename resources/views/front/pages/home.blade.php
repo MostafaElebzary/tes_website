@@ -174,71 +174,31 @@
                          data-aos-duration="800" data-aos-once="true">
                         <div class="services-bg-text">Services</div>
                         <span>{{trans('lang.Services')}}</span>
-                        <h3>We Provide the Best Quality <b>Services</b> <span class="overlay"></span></h3>
-                        <p>We are technology solutions providing company all over the world doing over 40 years.</p>
+                        <h3> {{settings_value('service_title_'.app()->getLocale())}}<span class="overlay"></span></h3>
+                        <p>{!! settings_value('service_desc_'.app()->getLocale()) !!}</p>
                         <div class="services-section-btn">
-                            <a href="/services" class="default-btn">Explore All Services</a>
+                            <a href="/services" class="default-btn">{{trans('lang.Explore All Services')}}</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-8 col-md-12">
                     <div class="services-slides owl-carousel owl-theme">
-                        <div class="services-item">
-                            <div class="services-image">
-                                <a href="services-details.html"><img
-                                        src="{{url('/')}}/assets/images/services/services-1.jpg" alt="image"></a>
+                        @foreach($services as $service)
+                            <div class="services-item">
+                                <div class="services-image">
+                                    <a href="/services"><img
+                                            src="storage/{{$service->image}}" alt="image"></a>
+                                </div>
+                                <div class="services-content">
+                                    <h3>
+                                        <a href="/services">{{$service->title}}</a>
+                                    </h3>
+                                    {{--                                <div>{!! $service->body !!}</div>--}}
+                                    <a href="/services" class="services-btn">{{trans('lang.View More')}}</a>
+                                </div>
                             </div>
-                            <div class="services-content">
-                                <h3>
-                                    <a href="services-details.html">Software Development</a>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…</p>
-                                <a href="services-details.html" class="services-btn">View More</a>
-                            </div>
-                        </div>
-
-                        <div class="services-item">
-                            <div class="services-image">
-                                <a href="services-details.html"><img
-                                        src="{{url('/')}}/assets/images/services/services-2.jpg" alt="image"></a>
-                            </div>
-                            <div class="services-content">
-                                <h3>
-                                    <a href="services-details.html">App Development</a>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…</p>
-                                <a href="services-details.html" class="services-btn">View More</a>
-                            </div>
-                        </div>
-
-                        <div class="services-item">
-                            <div class="services-image">
-                                <a href="services-details.html"><img
-                                        src="{{url('/')}}/assets/images/services/services-3.jpg" alt="image"></a>
-                            </div>
-                            <div class="services-content">
-                                <h3>
-                                    <a href="services-details.html">Web Development</a>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…</p>
-                                <a href="services-details.html" class="services-btn">View More</a>
-                            </div>
-                        </div>
-
-                        <div class="services-item">
-                            <div class="services-image">
-                                <a href="services-details.html"><img
-                                        src="{{url('/')}}/assets/images/services/services-4.jpg" alt="image"></a>
-                            </div>
-                            <div class="services-content">
-                                <h3>
-                                    <a href="services-details.html">Analytic Solutions</a>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet con setetur sadipscing elitr sed…</p>
-                                <a href="services-details.html" class="services-btn">View More</a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -260,86 +220,34 @@
                     <div class="projects-section-content" data-aos="fade-down" data-aos-delay="80"
                          data-aos-duration="800" data-aos-once="true">
                         <div class="projects-bg-text">WORK</div>
-                        <span>PROJECTS</span>
-                        <h3>Our Latest Incredible Client's Project <span class="overlay"></span></h3>
-                        <p>We are technology solutions providing company all over the world doing over 40 years.</p>
+                        <span>{{trans('lang.PROJECTS')}}</span>
+                        <h3>{{settings_value('project_title_'.app()->getLocale())}} <span class="overlay"></span></h3>
+                        <p>{{settings_value('project_desc_'.app()->getLocale())}}.</p>
                         <div class="projects-section-btn">
-                            <a href="/projects" class="default-btn">Explore All Projects</a>
+                            <a href="/projects" class="default-btn">{{trans('lang.Explore All Projects')}}</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-8 col-md-12">
                     <div class="projects-slides-two owl-carousel owl-theme">
-                        <div class="projects-item bg-F2F1F3" data-aos="fade-up" data-aos-delay="50"
-                             data-aos-duration="500" data-aos-once="true">
-                            <div class="projects-image">
-                                <a href="projects-details.html"><img
-                                        src="{{url('/')}}/assets/images/projects/projects-1.jpg" alt="image"></a>
-                            </div>
-                            <div class="projects-content">
-                                <h3>
-                                    <a href="projects-details.html">3D Animation</a>
-                                </h3>
-                                <a href="projects-details.html" class="projects-btn">View More</a>
-                            </div>
-                        </div>
 
-                        <div class="projects-item bg-F2F1F3" data-aos="fade-up" data-aos-delay="60"
-                             data-aos-duration="600" data-aos-once="true">
-                            <div class="projects-image">
-                                <a href="projects-details.html"><img
-                                        src="{{url('/')}}/assets/images/projects/projects-2.jpg" alt="image"></a>
+                        @foreach($projects as $key => $project)
+                            <div class="projects-item bg-F2F1F3" data-aos="fade-up" data-aos-delay="{{80}}"
+                                 data-aos-duration="500" data-aos-once="true">
+                                <div class="projects-image">
+                                    <a href="/projects"><img
+                                            src="storage/{{$project->image}}" alt="image"></a>
+                                </div>
+                                <div class="projects-content">
+                                    <h3>
+                                        <a href="/projects">{{$project->title}}</a>
+                                    </h3>
+                                    <a href="projects" class="projects-btn">{{trans('lang.View More')}}</a>
+                                </div>
                             </div>
-                            <div class="projects-content">
-                                <h3>
-                                    <a href="projects-details.html">Online Banking Software</a>
-                                </h3>
-                                <a href="projects-details.html" class="projects-btn">View More</a>
-                            </div>
-                        </div>
 
-                        <div class="projects-item bg-F2F1F3" data-aos="fade-up" data-aos-delay="70"
-                             data-aos-duration="700" data-aos-once="true">
-                            <div class="projects-image">
-                                <a href="projects-details.html"><img
-                                        src="{{url('/')}}/assets/images/projects/projects-3.jpg" alt="image"></a>
-                            </div>
-                            <div class="projects-content">
-                                <h3>
-                                    <a href="projects-details.html">Cashier Software</a>
-                                </h3>
-                                <a href="projects-details.html" class="projects-btn">View More</a>
-                            </div>
-                        </div>
-
-                        <div class="projects-item bg-F2F1F3" data-aos="fade-up" data-aos-delay="80"
-                             data-aos-duration="800" data-aos-once="true">
-                            <div class="projects-image">
-                                <a href="projects-details.html"><img
-                                        src="{{url('/')}}/assets/images/projects/projects-4.jpg" alt="image"></a>
-                            </div>
-                            <div class="projects-content">
-                                <h3>
-                                    <a href="projects-details.html">Analytics Software</a>
-                                </h3>
-                                <a href="projects-details.html" class="projects-btn">View More</a>
-                            </div>
-                        </div>
-
-                        <div class="projects-item bg-F2F1F3" data-aos="fade-up" data-aos-delay="90"
-                             data-aos-duration="900" data-aos-once="true">
-                            <div class="projects-image">
-                                <a href="projects-details.html"><img
-                                        src="{{url('/')}}/assets/images/projects/projects-5.jpg" alt="image"></a>
-                            </div>
-                            <div class="projects-content">
-                                <h3>
-                                    <a href="projects-details.html">Messaging App</a>
-                                </h3>
-                                <a href="projects-details.html" class="projects-btn">View More</a>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -351,48 +259,15 @@
     <div class="partner-area ptb-100">
         <div class="container">
             <div class="partner-slides owl-carousel owl-theme">
-                <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-                     data-aos-once="true">
-                    <a href="#">
-                        <img src="{{url('/')}}/assets/images/partner/partner-1.png" alt="partner">
-                        <img src="{{url('/')}}/assets/images/partner/partner-hover-1.png" alt="partner">
-                    </a>
-                </div>
-                <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-                     data-aos-once="true">
-                    <a href="#">
-                        <img src="{{url('/')}}/assets/images/partner/partner-2.png" alt="partner">
-                        <img src="{{url('/')}}/assets/images/partner/partner-hover-2.png" alt="partner">
-                    </a>
-                </div>
-                <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-                     data-aos-once="true">
-                    <a href="#">
-                        <img src="{{url('/')}}/assets/images/partner/partner-3.png" alt="partner">
-                        <img src="{{url('/')}}/assets/images/partner/partner-hover-3.png" alt="partner">
-                    </a>
-                </div>
-                <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-                     data-aos-once="true">
-                    <a href="#">
-                        <img src="{{url('/')}}/assets/images/partner/partner-4.png" alt="partner">
-                        <img src="{{url('/')}}/assets/images/partner/partner-hover-4.png" alt="partner">
-                    </a>
-                </div>
-                <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-                     data-aos-once="true">
-                    <a href="#">
-                        <img src="{{url('/')}}/assets/images/partner/partner-5.png" alt="partner">
-                        <img src="{{url('/')}}/assets/images/partner/partner-hover-5.png" alt="partner">
-                    </a>
-                </div>
-                <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-                     data-aos-once="true">
-                    <a href="#">
-                        <img src="{{url('/')}}/assets/images/partner/partner-6.png" alt="partner">
-                        <img src="{{url('/')}}/assets/images/partner/partner-hover-6.png" alt="partner">
-                    </a>
-                </div>
+                @foreach($partners as $partner)
+                    <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
+                         data-aos-once="true">
+                        <a href="#">
+                            <img src="storage/{{$partner->image}}" alt="partner">
+                            <img src="storage/{{$partner->image}}" alt="partner">
+                        </a>
+                    </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -406,9 +281,9 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Call Us</h3>
+                        <h3>{{trans('lang.Call Us')}}</h3>
                         <span>
-                                <a href="tel:9901234567">+990-123-4567</a>
+                                <a href="tel:{{settings_value('call_us')}}">{{settings_value('call_us')}}</a>
                             </span>
 
                         <div class="overview-shape">
@@ -419,9 +294,9 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Email Us</h3>
+                        <h3>{{trans('lang.Email Us')}}</h3>
                         <span>
-                                <a href="mailto:hicoze@gmail.com">hicoze@gmail.com</a>
+                                <a href="mailto:{{settings_value('email')}}">{{settings_value('email')}}</a>
                             </span>
 
                         <div class="overview-shape">
@@ -432,9 +307,9 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Tech Support</h3>
+                        <h3>{{trans('lang.Tech Support')}}</h3>
                         <span>
-                                <a href="tel:15143125678">+1 (514) 312-5678</a>
+                                <a href="tel:15143125678">{{settings_value('tech_support')}}</a>
                             </span>
 
                         <div class="overview-shape">
@@ -445,8 +320,8 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Visit Us</h3>
-                        <span>413 North Las Vegas, NV 89032</span>
+                        <h3>{{trans('lang.Visit Us')}}</h3>
+                        <span>{{settings_value('address_'.app()->getLocale())}}</span>
 
                         <div class="overview-shape">
                             <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
@@ -458,110 +333,110 @@
     </div>
     <!-- End Overview Area -->
 
-    <!-- Start Blog Area -->
-    <div class="blog-area pt-100 pb-75">
-        <div class="container">
-            <div class="section-title">
-                <span>ARTICLE</span>
-                <h2>Read Our Latest Blog <span class="overlay"></span></h2>
-            </div>
+{{--    <!-- Start Blog Area -->--}}
+{{--    <div class="blog-area pt-100 pb-75">--}}
+{{--        <div class="container">--}}
+{{--            <div class="section-title">--}}
+{{--                <span>ARTICLE</span>--}}
+{{--                <h2>Read Our Latest Blog <span class="overlay"></span></h2>--}}
+{{--            </div>--}}
 
-            <div class="blog-slides owl-carousel owl-theme">
-                <div class="blog-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-                     data-aos-once="true">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="blog-image">
-                                <a href="single-blog-1.html"><img src="{{url('/')}}/assets/images/blog/blog-1.jpg"
-                                                                  alt="image"></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="blog-content">
-                                <div class="date">9th July, 2021</div>
-                                <h3>
-                                    <a href="single-blog-1.html">How Technology Dominate In The new World In 2021</a>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor
-                                    invidunt ut labore.</p>
-                                <a href="single-blog-1.html" class="blog-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--            <div class="blog-slides owl-carousel owl-theme">--}}
+{{--                <div class="blog-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"--}}
+{{--                     data-aos-once="true">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-6">--}}
+{{--                            <div class="blog-image">--}}
+{{--                                <a href="single-blog-1.html"><img src="{{url('/')}}/assets/images/blog/blog-1.jpg"--}}
+{{--                                                                  alt="image"></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-lg-6">--}}
+{{--                            <div class="blog-content">--}}
+{{--                                <div class="date">9th July, 2021</div>--}}
+{{--                                <h3>--}}
+{{--                                    <a href="single-blog-1.html">How Technology Dominate In The new World In 2021</a>--}}
+{{--                                </h3>--}}
+{{--                                <p>Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor--}}
+{{--                                    invidunt ut labore.</p>--}}
+{{--                                <a href="single-blog-1.html" class="blog-btn">View More</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="blog-card" data-aos="fade-up" data-aos-delay="890" data-aos-duration="900"
-                     data-aos-once="true">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="blog-image">
-                                <a href="single-blog-1.html"><img src="{{url('/')}}/assets/images/blog/blog-2.jpg"
-                                                                  alt="image"></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="blog-content">
-                                <div class="date">7th July, 2021</div>
-                                <h3>
-                                    <a href="single-blog-1.html">Top 10 Most Famous Technology Trend In 2021</a>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor
-                                    invidunt ut labore.</p>
-                                <a href="single-blog-1.html" class="blog-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="blog-card" data-aos="fade-up" data-aos-delay="890" data-aos-duration="900"--}}
+{{--                     data-aos-once="true">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-6">--}}
+{{--                            <div class="blog-image">--}}
+{{--                                <a href="single-blog-1.html"><img src="{{url('/')}}/assets/images/blog/blog-2.jpg"--}}
+{{--                                                                  alt="image"></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-lg-6">--}}
+{{--                            <div class="blog-content">--}}
+{{--                                <div class="date">7th July, 2021</div>--}}
+{{--                                <h3>--}}
+{{--                                    <a href="single-blog-1.html">Top 10 Most Famous Technology Trend In 2021</a>--}}
+{{--                                </h3>--}}
+{{--                                <p>Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor--}}
+{{--                                    invidunt ut labore.</p>--}}
+{{--                                <a href="single-blog-1.html" class="blog-btn">View More</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="blog-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-                     data-aos-once="true">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="blog-image">
-                                <a href="single-blog-1.html"><img src="{{url('/')}}/assets/images/blog/blog-1.jpg"
-                                                                  alt="image"></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="blog-content">
-                                <div class="date">9th July, 2021</div>
-                                <h3>
-                                    <a href="single-blog-1.html">How Technology Dominate In The new World In 2021</a>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor
-                                    invidunt ut labore.</p>
-                                <a href="single-blog-1.html" class="blog-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+{{--                <div class="blog-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"--}}
+{{--                     data-aos-once="true">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-6">--}}
+{{--                            <div class="blog-image">--}}
+{{--                                <a href="single-blog-1.html"><img src="{{url('/')}}/assets/images/blog/blog-1.jpg"--}}
+{{--                                                                  alt="image"></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-lg-6">--}}
+{{--                            <div class="blog-content">--}}
+{{--                                <div class="date">9th July, 2021</div>--}}
+{{--                                <h3>--}}
+{{--                                    <a href="single-blog-1.html">How Technology Dominate In The new World In 2021</a>--}}
+{{--                                </h3>--}}
+{{--                                <p>Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor--}}
+{{--                                    invidunt ut labore.</p>--}}
+{{--                                <a href="single-blog-1.html" class="blog-btn">View More</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
 
-                <div class="blog-card" data-aos="fade-up" data-aos-delay="90" data-aos-duration="900"
-                     data-aos-once="true">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="blog-image">
-                                <a href="single-blog-1.html"><img src="{{url('/')}}/assets/images/blog/blog-2.jpg"
-                                                                  alt="image"></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="blog-content">
-                                <div class="date">7th July, 2021</div>
-                                <h3>
-                                    <a href="single-blog-1.html">Top 10 Most Famous Technology Trend In 2021</a>
-                                </h3>
-                                <p>Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor
-                                    invidunt ut labore.</p>
-                                <a href="single-blog-1.html" class="blog-btn">View More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Blog Area -->
+{{--                <div class="blog-card" data-aos="fade-up" data-aos-delay="90" data-aos-duration="900"--}}
+{{--                     data-aos-once="true">--}}
+{{--                    <div class="row align-items-center">--}}
+{{--                        <div class="col-lg-6">--}}
+{{--                            <div class="blog-image">--}}
+{{--                                <a href="single-blog-1.html"><img src="{{url('/')}}/assets/images/blog/blog-2.jpg"--}}
+{{--                                                                  alt="image"></a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-lg-6">--}}
+{{--                            <div class="blog-content">--}}
+{{--                                <div class="date">7th July, 2021</div>--}}
+{{--                                <h3>--}}
+{{--                                    <a href="single-blog-1.html">Top 10 Most Famous Technology Trend In 2021</a>--}}
+{{--                                </h3>--}}
+{{--                                <p>Lorem ipsum dolor sit amet conset sadipscing elitr sed diam nonumy eir m od tempor--}}
+{{--                                    invidunt ut labore.</p>--}}
+{{--                                <a href="single-blog-1.html" class="blog-btn">View More</a>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <!-- End Blog Area -->--}}
 
 
 

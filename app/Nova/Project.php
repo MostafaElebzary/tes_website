@@ -55,6 +55,7 @@ class Project extends Resource
             BelongsTo::make('Category' ,'Category',Category::class)->rules('required'),
             Text::make(trans('lang.title_ar'), 'title_ar')->rules('required'),
             Text::make(trans('lang.title_en'), 'title_en')->rules('required'),
+            Text::make(trans('lang.url'), 'url')->hideFromIndex()->rules('required','url'),
             Trix::make(trans('lang.body_ar'), 'body_ar')->rules('required'),
             Trix::make(trans('lang.body_en'), 'body_en')->rules('required'),
             Image::make(trans('lang.image'), 'image')->creationRules('required'),

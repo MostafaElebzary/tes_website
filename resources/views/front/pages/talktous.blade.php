@@ -4,7 +4,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="talk-image" data-tilt>
-                    <img src="{{url('/')}}/assets/images/talk/talk-2.png" alt="image">
+                    <img src="storage/{{settings_image('contact_us_image')}}" alt="image">
 
                     <div class="talk-circle">
                         <img src="{{url('/')}}/assets/images/talk/talk-circle.png" alt="image">
@@ -14,9 +14,9 @@
 
             <div class="col-lg-6 col-md-12">
                 <div class="talk-content margin-zero">
-                    <span>LET'S TALK</span>
-                    <h3>We Would Like To Hear From You Any Question <span class="overlay"></span></h3>
-                    <p>Lorem ipsum dolor sit amet consetetur sadipscing elitre sed diam non umy eirmod tempor invidunt ut labore.</p>
+                    <span>{{trans('lang.LETS TALK')}}</span>
+                    <h3>{{settings_value('contact_us_title_'.app()->getLocale())}} <span class="overlay"></span></h3>
+                    <p>{{settings_value('contact_us_desc_'.app()->getLocale())}}.</p>
 
                     <form id="contactFormTwo">
                         <div class="row">

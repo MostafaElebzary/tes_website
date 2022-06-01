@@ -30,50 +30,50 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Call Us</h3>
+                        <h3>{{trans('lang.Call Us')}}</h3>
                         <span>
-                                <a href="tel:9901234567">+990-123-4567</a>
+                                <a href="tel:{{settings_value('call_us')}}">{{settings_value('call_us')}}</a>
                             </span>
 
                         <div class="overview-shape">
-                            <img src="assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Email Us</h3>
+                        <h3>{{trans('lang.Email Us')}}</h3>
                         <span>
-                                <a href="mailto:hicoze@gmail.com">hicoze@gmail.com</a>
+                                <a href="mailto:{{settings_value('email')}}">{{settings_value('email')}}</a>
                             </span>
 
                         <div class="overview-shape">
-                            <img src="assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Tech Support</h3>
+                        <h3>{{trans('lang.Tech Support')}}</h3>
                         <span>
-                                <a href="tel:15143125678">+1 (514) 312-5678</a>
+                                <a href="tel:15143125678">{{settings_value('tech_support')}}</a>
                             </span>
 
                         <div class="overview-shape">
-                            <img src="assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
                         </div>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Visit Us</h3>
-                        <span>413 North Las Vegas, NV 89032</span>
+                        <h3>{{trans('lang.Visit Us')}}</h3>
+                        <span>{{settings_value('address_'.app()->getLocale())}}</span>
 
                         <div class="overview-shape">
-                            <img src="assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
                         </div>
                     </div>
                 </div>
@@ -83,8 +83,6 @@
     <!-- End Overview Area -->
 
 
-
-
     @include('front.pages.talktous')
 
 
@@ -92,7 +90,8 @@
     <!-- Start Map Area -->
     <div class="container ptb-100">
         <div class="map-location" id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.0707789980365!2d31.330393414957108!3d30.00612398189629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458394aec1582c1%3A0x55ea8b2b038bfbfc!2sAl%20Mokatam%2C%20Al%20Abageyah%2C%20El%20Mokattam%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1654027100628!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{{--            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.0707789980365!2d31.330393414957108!3d30.00612398189629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458394aec1582c1%3A0x55ea8b2b038bfbfc!2sAl%20Mokatam%2C%20Al%20Abageyah%2C%20El%20Mokattam%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1654027100628!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>--}}
+       {!! settings_value('map_iframe') !!}
         </div>
     </div>
     <!-- End Map Area -->
