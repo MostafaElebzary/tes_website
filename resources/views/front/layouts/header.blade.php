@@ -118,8 +118,8 @@
                 <div class="main-responsive-menu">
                     <div class="logo">
                         <a href="/">
-                            <img src="//storage/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
-                            <img src="//storage/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
+                            <img src="/storage/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
+                            <img src="/storage/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
                         </a>
                     </div>
                 </div>
@@ -130,8 +130,8 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="/">
-                        <img src="//storage/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
-                        <img src="//storage/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
+                        <img src="/storage/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
+                        <img src="/storage/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -294,8 +294,8 @@
 
             <div class="modal-body">
                 <a href="/">
-                    <img src="//storage/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
-                    <img src="//storage/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
+                    <img src="/storage/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
+                    <img src="/storage/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
                 </a>
                 <div class="sidebar-content">
                     <h3> @if(session('lang') == 'en') {{about_us()->title_en}} @else {{about_us()->title_ar}}@endif</h3>

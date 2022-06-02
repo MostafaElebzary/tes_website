@@ -37,7 +37,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="services-item">
                             <div class="services-image">
-                                <img src="//storage/{{$service->image}}"
+                                <img src="/storage/{{$service->image}}"
                                      alt="image">
                             </div>
                             <div class="services-content">

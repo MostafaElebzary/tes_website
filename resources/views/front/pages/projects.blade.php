@@ -47,7 +47,7 @@
                              data-aos-once="true">
                             <div class="projects-image">
                                 <a href="{{$project->url}}" target="_blank">
-                                    <img src="//storage/{{$project->image}}"
+                                    <img src="/storage/{{$project->image}}"
                                          alt="image">
                                 </a>
                             </div>
