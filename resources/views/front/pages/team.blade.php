@@ -13,7 +13,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-team-card">
                         <div class="team-image" data-tilt>
-                            <img src="/storage/{{$team->image}}" alt="image">
+                            <img src="{{url('storage')}}/{{$team->image}}" alt="image">
 
                             <ul class="team-social">
                                 <li>

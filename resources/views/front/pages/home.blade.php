@@ -27,7 +27,7 @@
 
                 <div class="col-lg-6 col-md-12">
                     <div class="main-banner-image">
-                        <img src="/storage/{{ $slider->image  }}" alt="image" data-aos="fade-down" data-aos-delay="70"
+                        <img src="{{url('storage')}}/{{ $slider->image  }}" alt="image" data-aos="fade-down" data-aos-delay="70"
                              data-aos-duration="700" data-aos-once="true">
 
                         <div class="banner-circle">
@@ -81,7 +81,7 @@
                             <div class="single-features-card" data-tilt>
                                 <div class="features-image" data-tilt>
                                     <a href="/services"><img
-                                            src="/storage/{{$service->image}}" alt="image"></a>
+                                            src="{{url('storage')}}/{{$service->image}}" alt="image"></a>
                                 </div>
                                 <div class="content">
                                     <h3>
@@ -110,7 +110,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-wrap-image" data-tilt>
-                        <img src="/storage/{{$about->image}}" alt="image" data-aos="fade-down"
+                        <img src="{{url('storage')}}/{{$about->image}}" alt="image" data-aos="fade-down"
                              data-aos-delay="80" data-aos-duration="800" data-aos-once="true">
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                         <div class="single-about-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                              data-aos-once="true">
                             <div class="card-image" data-tilt>
-                                <img src="/storage/{{$mission->image}}" alt="image">
+                                <img src="{{url('storage')}}/{{$mission->image}}" alt="image">
                             </div>
                         </div>
                     </div>
@@ -188,7 +188,7 @@
                             <div class="services-item">
                                 <div class="services-image">
                                     <a href="/services"><img
-                                            src="/storage/{{$service->image}}" alt="image"></a>
+                                            src="{{url('storage')}}/{{$service->image}}" alt="image"></a>
                                 </div>
                                 <div class="services-content">
                                     <h3>
@@ -237,7 +237,7 @@
                                  data-aos-duration="500" data-aos-once="true">
                                 <div class="projects-image">
                                     <a href="/projects"><img
-                                            src="/storage/{{$project->image}}" alt="image"></a>
+                                            src="{{url('storage')}}/{{$project->image}}" alt="image"></a>
                                 </div>
                                 <div class="projects-content">
                                     <h3>
@@ -263,8 +263,8 @@
                     <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                          data-aos-once="true">
                         <a href="#">
-                            <img src="/storage/{{$partner->image}}" alt="partner">
-                            <img src="/storage/{{$partner->image}}" alt="partner">
+                            <img src="{{url('storage')}}/{{$partner->image}}" alt="partner">
+                            <img src="{{url('storage')}}/{{$partner->image}}" alt="partner">
                         </a>
                     </div>
                 @endforeach
