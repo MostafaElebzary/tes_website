@@ -45,3 +45,8 @@ Route::get('lang/{lang}', function ($lang) {
     }
     return back();
 });
+
+
+Route::get('/link',function (){
+   Artisan::call('storage:link');
+});
