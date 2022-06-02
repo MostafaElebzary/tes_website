@@ -4,7 +4,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="talk-image" data-tilt>
-                    <img src="storage/{{settings_image('contact_us_image')}}" alt="image">
+                    <img src="//storage/{{settings_image('contact_us_image')}}" alt="image">
 
                     <div class="talk-circle">
                         <img src="{{url('/')}}/assets/images/talk/talk-circle.png" alt="image">
