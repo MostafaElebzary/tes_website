@@ -8,7 +8,7 @@
                     <div class="widget-logo">
                         <a href="/"><img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" alt="image"></a>
                     </div>
-                    <p>{{ settings_value("contact_us_desc_".app()->getLocale())}}.</p>
+                    <p>{{ settings_value("footer_desc_".app()->getLocale())}}.</p>
 
                     <ul class="widget-social">
                         <li>
