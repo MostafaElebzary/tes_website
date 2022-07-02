@@ -49,5 +49,6 @@ return [
     'Subscribe Newsletter' => 'اشترك في النشرة الإخبارية',
     'Enter your email' => 'أدخل بريدك الإلكتروني',
     'Subscribe' => 'الإشتراك',
+    'work process' => 'آلية العمل',
 
 ];
