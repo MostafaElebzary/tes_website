@@ -112,55 +112,55 @@
 
 @if(session('lang') == 'en')
     <!-- Links of JS files -->
-    <script src="{{url('/')}}/assets/js/jquery.min.js"></script>
-    <script src="{{url('/')}}/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="{{url('/')}}/assets/js/jquery.meanmenu.js"></script>
-    <script src="{{url('/')}}/assets/js/owl.carousel.min.js"></script>
-    <script src="{{url('/')}}/assets/js/jquery.appear.js"></script>
-    <script src="{{url('/')}}/assets/js/odometer.min.js"></script>
-    <script src="{{url('/')}}/assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="{{url('/')}}/assets/js/fancybox.min.js"></script>
-    <script src="{{url('/')}}/assets/js/tweenmax.min.js"></script>
-    <script src="{{url('/')}}/assets/js/ScrollMagic.min.js"></script>
-    <script src="{{url('/')}}/assets/js/animation.gsap.min.js"></script>
-    <script src="{{url('/')}}/assets/js/debug.addIndicators.min.js"></script>
-    <script src="{{url('/')}}/assets/js/mixitup.min.js"></script>
-    <script src="{{url('/')}}/assets/js/nice-select.min.js"></script>
-    <script src="{{url('/')}}/assets/js/tilt.jquery.min.js"></script>
-    <script src="{{url('/')}}/assets/js/parallax.min.js"></script>
-    <script src="{{url('/')}}/assets/js/jquery.ajaxchimp.min.js"></script>
-    <script src="{{url('/')}}/assets/js/form-validator.min.js"></script>
-    <script src="{{url('/')}}/assets/js/contact-form-script.js"></script>
-    <script src="{{url('/')}}/assets/js/aos.js"></script>
-    <script src="{{url('/')}}/assets/js/wow.min.js"></script>
-    <script src="{{url('/')}}/assets/js/main.js"></script>
+    <script defer src="{{url('/')}}/assets/js/jquery.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/jquery.meanmenu.js"></script>
+    <script defer src="{{url('/')}}/assets/js/owl.carousel.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/jquery.appear.js"></script>
+    <script defer src="{{url('/')}}/assets/js/odometer.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/jquery.magnific-popup.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/fancybox.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/tweenmax.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/ScrollMagic.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/animation.gsap.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/debug.addIndicators.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/mixitup.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/nice-select.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/tilt.jquery.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/parallax.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/jquery.ajaxchimp.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/form-validator.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/contact-form-script.js"></script>
+    <script defer src="{{url('/')}}/assets/js/aos.js"></script>
+    <script defer src="{{url('/')}}/assets/js/wow.min.js"></script>
+    <script defer src="{{url('/')}}/assets/js/main.js"></script>
 
 
 
 @else
 
-    <script src="{{url('/')}}/assets_ar/js/jquery.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/bootstrap.bundle.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/jquery.meanmenu.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/owl.carousel.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/jquery.appear.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/odometer.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/jquery.magnific-popup.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/fancybox.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/tweenmax.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/ScrollMagic.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/animation.gsap.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/debug.addIndicators.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/mixitup.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/nice-select.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/tilt.jquery.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/parallax.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/jquery.ajaxchimp.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/form-validator.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/contact-form-script.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/aos.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/wow.min.js"></script>
-    <script src="{{url('/')}}/assets_ar/js/main.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/jquery.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/bootstrap.bundle.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/jquery.meanmenu.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/owl.carousel.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/jquery.appear.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/odometer.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/jquery.magnific-popup.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/fancybox.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/tweenmax.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/ScrollMagic.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/animation.gsap.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/debug.addIndicators.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/mixitup.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/nice-select.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/tilt.jquery.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/parallax.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/jquery.ajaxchimp.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/form-validator.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/contact-form-script.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/aos.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/wow.min.js"></script>
+    <script defer src="{{url('/')}}/assets_ar/js/main.js"></script>
 
 
     @endif
