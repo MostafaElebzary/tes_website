@@ -25,6 +25,12 @@ Route::get('/about-us', [HomeController::class, 'about']);
 Route::get('/contact-us', [HomeController::class, 'contact']);
 Route::post('/subscribe', [HomeController::class, 'Subscribe']);
 Route::post('/contact', [HomeController::class, 'Contact_us']);
+Route::get('/site_map.xml', [HomeController::class, 'sitemap']);
+
+//Route::get("site_map.xml", array(
+//    "as"   => "sitemap",
+//    "uses" => "HomeController@sitemap", // or any other controller you want to use
+//));
 
 Route::get('lang/{lang}', function ($lang) {
 
@@ -50,3 +56,4 @@ Route::get('lang/{lang}', function ($lang) {
 Route::get('/link',function (){
    Artisan::call('storage:link');
 });
+

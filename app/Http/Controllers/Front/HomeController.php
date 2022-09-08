@@ -14,10 +14,20 @@ use App\Models\Subscribe;
 use App\Models\Team;
 use App\Models\Testimonials;
 use App\Models\WorkProcess;
+use App\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\View;
 
 class HomeController extends Controller
 {
+    public function sitemap()
+    {
+        $products = Project::all();
+        $services = Service::all();
+        $content = View::make('sitemap', ['products' => $products , 'services'=>$services]);
+        return Response::make($content)->header('Content-Type', 'text/xml;charset=utf-8');
+    }
     public function home()
     {
         $data['slider'] = Slider::first();
