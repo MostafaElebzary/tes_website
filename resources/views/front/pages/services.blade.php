@@ -38,7 +38,7 @@
                         <div class="services-item">
                             <div class="services-image">
                                 <img src="{{url('storage')}}/{{$service->image}}"
-                                     alt="image">
+                                     alt="{{$service->title}}">
                             </div>
                             <div class="services-content">
                                 <h3 style="color: white">

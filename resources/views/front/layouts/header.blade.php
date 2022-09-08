@@ -125,8 +125,8 @@
                 <div class="main-responsive-menu">
                     <div class="logo">
                         <a href="/">
-                            <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
-                            <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
+                            <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo" alt="{{settings_value('logo_light')}}">
+                            <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo" alt="{{settings_value('logo_dark')}}">
                         </a>
                     </div>
                 </div>
@@ -137,8 +137,8 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="/">
-                        <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
-                        <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
+                        <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo" alt="{{settings_value('logo_light')}}">
+                        <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo" alt="{{settings_value('logo_dark')}}">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -190,20 +190,20 @@
                                         <div class="dropdown-menu language-dropdown-menu">
                                             @if(session('lang') == 'en')
                                                 <a class="dropdown-item" href="{{url('lang/en')}}">
-                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="flag">
+                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="uk">
                                                     ENG
                                                 </a>
                                                 <a class="dropdown-item" href="{{url('lang/ar')}}">
-                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="flag">
+                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="uae">
                                                     العربيّة
                                                 </a>
                                             @else
                                                 <a class="dropdown-item" href="{{url('lang/ar')}}">
-                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="flag">
+                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="uae">
                                                     العربيّة
                                                 </a>
                                                 <a class="dropdown-item" href="{{url('lang/en')}}">
-                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="flag">
+                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="uk">
                                                     ENG
                                                 </a>
                                             @endif
@@ -255,20 +255,20 @@
                                         <div class="dropdown-menu language-dropdown-menu">
                                             @if(session('lang') == 'en')
                                                 <a class="dropdown-item" href="{{url('lang/en')}}">
-                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="flag">
+                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="uk">
                                                     EN
                                                 </a>
                                                 <a class="dropdown-item" href="{{url('lang/ar')}}">
-                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="flag">
+                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="uae">
                                                     ع
                                                 </a>
                                             @else
                                                 <a class="dropdown-item" href="{{url('lang/ar')}}">
-                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="flag">
+                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="uae">
                                                     ع
                                                 </a>
                                                 <a class="dropdown-item" href="{{url('lang/en')}}">
-                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="flag">
+                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="uk">
                                                     EN
                                                 </a>
                                             @endif
@@ -301,8 +301,8 @@
 
             <div class="modal-body">
                 <a href="/">
-                    <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo" alt="image">
-                    <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo" alt="image">
+                    <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo" alt="{{settings_value('logo_light')}}">
+                    <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo" alt="{{settings_value('logo_dark')}}">
                 </a>
                 <div class="sidebar-content">
                     <h3> @if(session('lang') == 'en') {{about_us()->title_en}} @else {{about_us()->title_ar}}@endif</h3>

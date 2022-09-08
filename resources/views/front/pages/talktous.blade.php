@@ -4,10 +4,10 @@
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
                 <div class="talk-image" data-tilt>
-                    <img src="{{url('storage')}}/{{settings_image('contact_us_image')}}" alt="image">
+                    <img src="{{url('storage')}}/{{settings_image('contact_us_image')}}" alt="{{settings_value('contact_us_image')}}">
 
                     <div class="talk-circle">
-                        <img src="{{url('/')}}/assets/images/talk/talk-circle.png" alt="image">
+                        <img src="{{url('/')}}/assets/images/talk/talk-circle.png" alt="{{settings_value('contact_us_image')}}">
                     </div>
                 </div>
             </div>

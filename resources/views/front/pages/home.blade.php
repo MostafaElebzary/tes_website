@@ -27,7 +27,7 @@
 
                 <div class="col-lg-6 col-md-12">
                     <div class="main-banner-image">
-                        <img src="{{url('storage')}}/{{ $slider->image  }}" alt="image" data-aos="fade-down" data-aos-delay="70"
+                        <img src="{{url('storage')}}/{{ $slider->image  }}" alt="{{$slider->title}}" data-aos="fade-down" data-aos-delay="70"
                              data-aos-duration="700" data-aos-once="true">
 
                         <div class="banner-circle">
@@ -41,25 +41,25 @@
         </div>
 
         <div class="banner-shape-1">
-            <img src="{{url('/')}}/assets/images/main-banner/banner-shape-1.png" alt="image">
+            <img src="{{url('/')}}/assets/images/main-banner/banner-shape-1.png" alt="banner-shape-1.png">
         </div>
         <div class="banner-shape-2">
-            <img src="{{url('/')}}/assets/images/main-banner/banner-shape-2.png" alt="image">
+            <img src="{{url('/')}}/assets/images/main-banner/banner-shape-2.png" alt="banner-shape-2.png">
         </div>
         <div class="banner-dot-shape-1">
-            <img src="{{url('/')}}/assets/images/main-banner/dot-1.png" alt="image">
+            <img src="{{url('/')}}/assets/images/main-banner/dot-1.png" alt="dot-1.png">
         </div>
         <div class="banner-dot-shape-2">
-            <img src="{{url('/')}}/assets/images/main-banner/dot-2.png" alt="image">
+            <img src="{{url('/')}}/assets/images/main-banner/dot-2.png" alt="dot-2.png">
         </div>
         <div class="banner-dot-shape-3">
-            <img src="{{url('/')}}/assets/images/main-banner/dot-3.png" alt="image">
+            <img src="{{url('/')}}/assets/images/main-banner/dot-3.png" alt="dot-3.png">
         </div>
         <div class="banner-dot-shape-4">
-            <img src="{{url('/')}}/assets/images/main-banner/dot-4.png" alt="image">
+            <img src="{{url('/')}}/assets/images/main-banner/dot-4.png" alt="dot-4.png">
         </div>
         <div class="banner-dot-shape-5">
-            <img src="{{url('/')}}/assets/images/main-banner/dot-5.png" alt="image">
+            <img src="{{url('/')}}/assets/images/main-banner/dot-5.png" alt="dot-5.png">
         </div>
         <div class="lines">
             <div class="line"></div>
@@ -81,7 +81,7 @@
                             <div class="single-features-card" data-tilt>
                                 <div class="features-image" data-tilt>
                                     <a href="/services"><img
-                                            src="{{url('storage')}}/{{$service->image}}" alt="image"></a>
+                                            src="{{url('storage')}}/{{$service->image}}" alt="{{$service->title}}"></a>
                                 </div>
                                 <div class="content">
                                     <h3>
@@ -110,7 +110,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-wrap-image" data-tilt>
-                        <img src="{{url('storage')}}/{{$about->image}}" alt="image" data-aos="fade-down"
+                        <img src="{{url('storage')}}/{{$about->image}}" alt="{{$about->title}}" data-aos="fade-down"
                              data-aos-delay="80" data-aos-duration="800" data-aos-once="true">
                     </div>
                 </div>
@@ -151,7 +151,7 @@
                         <div class="single-about-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                              data-aos-once="true">
                             <div class="card-image" data-tilt>
-                                <img src="{{url('storage')}}/{{$mission->image}}" alt="image">
+                                <img src="{{url('storage')}}/{{$mission->image}}" alt="{{$mission->page}}">
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
         </div>
 
         <div class="about-circle-shape">
-            <img src="{{url('/')}}/assets/images/about/about-circle.png" alt="image">
+            <img src="{{url('/')}}/assets/images/about/about-circle.png" alt="about-circle">
         </div>
     </div>
     <!-- End About Area -->
@@ -188,7 +188,7 @@
                             <div class="services-item">
                                 <div class="services-image">
                                     <a href="/services"><img
-                                            src="{{url('storage')}}/{{$service->image}}" alt="image"></a>
+                                            src="{{url('storage')}}/{{$service->image}}" alt="{{$service->title}}"></a>
                                 </div>
                                 <div class="services-content">
                                     <h3>
@@ -237,7 +237,7 @@
                                  data-aos-duration="500" data-aos-once="true">
                                 <div class="projects-image">
                                     <a href="/projects"><img
-                                            src="{{url('storage')}}/{{$project->image}}" alt="image"></a>
+                                            src="{{url('storage')}}/{{$project->image}}" alt="{{$project->title}}"></a>
                                 </div>
                                 <div class="projects-content">
                                     <h3>
@@ -259,12 +259,12 @@
     <div class="partner-area ptb-100">
         <div class="container">
             <div class="partner-slides owl-carousel owl-theme">
-                @foreach($partners as $partner)
+                @foreach($partners as $key=> $partner)
                     <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                          data-aos-once="true">
                         <a href="#">
-                            <img src="{{url('storage')}}/{{$partner->image}}" alt="partner">
-                            <img src="{{url('storage')}}/{{$partner->image}}" alt="partner">
+                            <img src="{{url('storage')}}/{{$partner->image}}" alt="partner{{$key}}">
+                            <img src="{{url('storage')}}/{{$partner->image}}" alt="partner{{$key}}">
                         </a>
                     </div>
                 @endforeach
@@ -287,7 +287,7 @@
                             </span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="overview-shape">
                         </div>
                     </div>
                 </div>
@@ -300,7 +300,7 @@
                             </span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="overview-shape">
                         </div>
                     </div>
                 </div>
@@ -313,7 +313,7 @@
                             </span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="overview-shape">
                         </div>
                     </div>
                 </div>
@@ -324,7 +324,7 @@
                         <span>{{settings_value('address_'.app()->getLocale())}}</span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="overview-shape">
                         </div>
                     </div>
                 </div>

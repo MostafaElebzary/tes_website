@@ -36,7 +36,7 @@
                             </span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="{{trans('lang.Contact')}}">
                         </div>
                     </div>
                 </div>
@@ -49,7 +49,7 @@
                             </span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="{{trans('lang.Contact')}}">
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,7 @@
                             </span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="{{trans('lang.Contact')}}">
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                         <span>{{settings_value('address_'.app()->getLocale())}}</span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="image">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="{{trans('lang.Contact')}}">
                         </div>
                     </div>
                 </div>

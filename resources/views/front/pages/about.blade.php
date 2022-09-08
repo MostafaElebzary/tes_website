@@ -28,7 +28,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-wrap-image" data-tilt>
-                        <img src="{{url('storage')}}/{{$about->image}}" alt="image" data-aos="fade-down"
+                        <img src="{{url('storage')}}/{{$about->image}}" alt="{{$about->title}}" data-aos="fade-down"
                              data-aos-delay="80" data-aos-duration="800" data-aos-once="true">
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                         <div class="single-about-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                              data-aos-once="true">
                             <div class="card-image" data-tilt>
-                                <img src="{{url('storage')}}/{{$mission->image}}" alt="image">
+                                <img src="{{url('storage')}}/{{$mission->image}}" alt="{{$mission->page}}">
                             </div>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
         </div>
 
         <div class="about-circle-shape">
-            <img src="{{url('/')}}/assets/images/about/about-circle.png" alt="image">
+            <img src="{{url('/')}}/assets/images/about/about-circle.png" alt="{{$about->title}}">
         </div>
     </div>
 

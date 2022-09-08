@@ -48,7 +48,7 @@
                             <div class="projects-image">
                                 <a href="{{$project->url}}" target="_blank">
                                     <img src="{{url('storage')}}/{{$project->image}}"
-                                         alt="image">
+                                         alt="{{$project->title}}">
                                 </a>
                             </div>
                             <div class="projects-content">
@@ -67,7 +67,7 @@
         </div>
 
         <div class="projects-bg-shape-1">
-            <img src="assets/images/projects/projects-bg-shape.png" alt="image">
+            <img src="assets/images/projects/projects-bg-shape.png" alt="{{settings_value('service_title_'.app()->getLocale())}}">
         </div>
     </div>
     <!-- End Projects Area -->

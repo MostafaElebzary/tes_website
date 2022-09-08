@@ -42,7 +42,7 @@
         <div class="video-view-content" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
              data-aos-once="true">
             <div class="video-image">
-                <img src="{{url('storage')}}/{{settings_image("video_image")}}" alt="image">
+                <img src="{{url('storage')}}/{{settings_image("video_image")}}" alt="{{settings_value("video_image")}}">
             </div>
 
             <a href="{{settings_value('video_url')}}" class="video-btn popup-youtube">
@@ -72,7 +72,7 @@
                     </p>
 
                     <div class="info-item-box">
-                        <img src="{{url('storage')}}/{{$testimonial->user_image}}" class="rounded-circle" alt="image">
+                        <img src="{{url('storage')}}/{{$testimonial->user_image}}" class="rounded-circle" alt="{{$testimonial->user_name}}">
                         <h4>{{$testimonial->user_name}}, <span>{{$testimonial->user_position}}</span></h4>
                         <ul class="rating-list">
                             @for ($star = 0; $star < 5; $star++)

@@ -6,7 +6,7 @@
                 <div class="single-footer-widget" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                      data-aos-once="true">
                     <div class="widget-logo">
-                        <a href="/"><img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" alt="image"></a>
+                        <a href="/"><img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" alt="{{settings_value('logo_dark')}}"></a>
                     </div>
                     <p>{{ settings_value("footer_desc_".app()->getLocale())}}.</p>
 
