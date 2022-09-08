@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     @if(session('lang') == 'en')
-
-
+        <meta name="description" content="{{settings_value('meta_description_en')}}">
+        <meta name="keywords" content="{{settings_value('meta_keywords_en')}}">
+        <meta name="author" content="TESolution Software House">
 
         <style>
 
@@ -25,6 +26,9 @@
                 --font-size: 16px;
                 --transition: .6s;
                 --btn-gradient-color: radial-gradient(circle, #E7AB1D, #f8c600, #eed900, #e0ec00, #cdff05);
+            }
+            .gray {
+                color: gray;
             }
         </style>
         <!-- Links of CSS files -->
@@ -46,6 +50,9 @@
         <link rel="stylesheet" href="{{url('/')}}/assets/css/responsive.css">
     @else
 
+        <meta name="description" content="{{settings_value('meta_description_ar')}}">
+        <meta name="keywords" content="{{settings_value('meta_keywords_ar')}}">
+        <meta name="author" content="TESolution Software House">
         <link rel="stylesheet" href="{{url('/')}}/assets_ar/css/bootstrap.rtl.min.css">
         <link rel="stylesheet" href="{{url('/')}}/assets_ar/css/aos.css">
         <link rel="stylesheet" href="{{url('/')}}/assets_ar/css/animate.min.css">
@@ -168,11 +175,11 @@
                         <div class="others-options d-flex align-items-center">
                             <div class="option-item">
                                 <ul class="topbar-action">
-                                    <li class="dropdown language-option" style="color: gray">
+                                    <li class="dropdown language-option gray" >
                                         <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                                 aria-haspopup="true" aria-expanded="false">
                                             <i class="ri-global-line"></i>
-                                            <span class="lang-name" style="color: gray">
+                                            <span class="lang-name gray" >
                                             @if(session('lang') == 'en')
                                                     ENG
                                                 @else
@@ -233,11 +240,11 @@
                             <div class="option-item">
 
                                 <ul class="topbar-action">
-                                    <li class="dropdown language-option" style="color: gray">
+                                    <li class="dropdown language-option gray" >
                                         <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                                 aria-haspopup="true" aria-expanded="false">
                                             <i class="ri-global-line"></i>
-                                            <span class="lang-name" style="color: gray">
+                                            <span class="lang-name gray">
                                             @if(session('lang') == 'en')
                                                     EN
                                                 @else
