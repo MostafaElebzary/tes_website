@@ -7,6 +7,7 @@ use Laravel\Nova\Fields\Avatar;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\Trix;
 use Nikaia\Rating\Rating;
 use Laravel\Nova\Http\Requests\NovaRequest;
@@ -65,8 +66,8 @@ class Testimonials extends Resource
                 'glow-color' => '#fff',
                 'text-class' => 'inline-block text-80 h-9 pt-2',
             ])->min(0)->max(5)->increment(1)->rules('required'),
-            Trix::make(trans('lang.body_ar'), 'body_ar')->rules('required'),
-            Trix::make(trans('lang.body_en'), 'body_en')->rules('required'),
+            Textarea::make(trans('lang.body_ar'), 'body_ar')->rules('required'),
+            Textarea::make(trans('lang.body_en'), 'body_en')->rules('required'),
             Avatar::make(trans('lang.user_image'), 'user_image')->creationRules('required'),
         ];
     }
