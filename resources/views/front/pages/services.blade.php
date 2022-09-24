@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Page Banner Area -->
-    <div class="page-banner-area bg-3 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="page-banner-area bg-4 jarallax" data-jarallax='{"speed": 0.3}'>
         <div class="container">
             <div class="page-banner-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                  data-aos-once="true">
@@ -39,12 +39,13 @@
                                 <img src="{{url('storage')}}/{{$service->image}}"
                                      alt="{{$service->title}}">
                             </div>
-                            <div class="services-content">
+                            <div class="services-content ">
                                 <h3>
-                                    {{$service->title}}
+                                    <a href="#">{{$service->title}}</a>
                                 </h3>
-                                <div>{!! $service->body !!}</div>
-
+                                <div class="service-paragraph height-15" >
+                                    {!! $service->body !!}
+                                </div>
                             </div>
                         </div>
                     </div>

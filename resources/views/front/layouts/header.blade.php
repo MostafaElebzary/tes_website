@@ -15,25 +15,25 @@
         <meta name="author" content="TESolution Software House">
 
 
-        <style>
-            :root {
-                --main-font-family: 'Open Sans', sans-serif;
-                --heading-font-family: 'Jost', sans-serif;
-                --monoton-font-family: 'Monoton', cursive;
-                --main-color: #E7AB1D;
-                --optional-color: #3E019A;
-                --white-color: #ffffff;
-                --black-color: #14042C;
-                --paragraph-color: #646464;
-                --font-size: 16px;
-                --transition: .6s;
-                --btn-gradient-color: radial-gradient(circle, #E7AB1D, #f8c600, #eed900, #e0ec00, #cdff05);
-            }
-            .gray {
-                color: gray;
-            }
-        </style>
-        <!-- Links of CSS files -->
+        {{--        <style>--}}
+        {{--            :root {--}}
+        {{--                --main-font-family: 'Open Sans', sans-serif;--}}
+        {{--                --heading-font-family: 'Jost', sans-serif;--}}
+        {{--                --monoton-font-family: 'Monoton', cursive;--}}
+        {{--                --main-color: #E7AB1D;--}}
+        {{--                --optional-color: #3E019A;--}}
+        {{--                --white-color: #ffffff;--}}
+        {{--                --black-color: #14042C;--}}
+        {{--                --paragraph-color: #646464;--}}
+        {{--                --font-size: 16px;--}}
+        {{--                --transition: .6s;--}}
+        {{--                --btn-gradient-color: radial-gradient(circle, #E7AB1D, #f8c600, #eed900, #e0ec00, #cdff05);--}}
+        {{--            }--}}
+        {{--            .gray {--}}
+        {{--                color: gray;--}}
+        {{--            }--}}
+        {{--        </style>--}}
+    <!-- Links of CSS files -->
         <link rel="stylesheet" href="{{url('/')}}/assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{url('/')}}/assets/css/aos.css">
         <link rel="stylesheet" href="{{url('/')}}/assets/css/animate.min.css">
@@ -128,8 +128,10 @@
                 <div class="main-responsive-menu">
                     <div class="logo">
                         <a href="/">
-                            <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo" alt="{{settings_value('logo_light')}}">
-                            <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo" alt="{{settings_value('logo_dark')}}">
+                            <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo"
+                                 alt="{{settings_value('logo_light')}}">
+                            <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo"
+                                 alt="{{settings_value('logo_dark')}}">
                         </a>
                     </div>
                 </div>
@@ -140,8 +142,10 @@
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-md navbar-light">
                     <a class="navbar-brand" href="/">
-                        <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo" alt="{{settings_value('logo_light')}}">
-                        <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo" alt="{{settings_value('logo_dark')}}">
+                        <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo"
+                             alt="{{settings_value('logo_light')}}">
+                        <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo"
+                             alt="{{settings_value('logo_dark')}}">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -175,52 +179,56 @@
                         </ul>
 
                         <div class="others-options d-flex align-items-center">
-                            <div class="option-item">
-                                <ul class="topbar-action">
-                                    <li class="dropdown language-option gray" >
-                                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                                aria-haspopup="true" aria-expanded="false">
-                                            <i class="ri-global-line"></i>
-                                            <span class="lang-name gray" >
-                                            @if(session('lang') == 'en')
-                                                    ENG
-                                                @else
-                                                    العربيّة
-                                                @endif
-                                    </span>
-                                        </button>
-                                        <div class="dropdown-menu language-dropdown-menu">
-                                            @if(session('lang') == 'en')
-                                                <a class="dropdown-item" href="{{url('lang/en')}}">
-                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="uk">
-                                                    ENG
-                                                </a>
-                                                <a class="dropdown-item" href="{{url('lang/ar')}}">
-                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="uae">
-                                                    العربيّة
-                                                </a>
-                                            @else
-                                                <a class="dropdown-item" href="{{url('lang/ar')}}">
-                                                    <img src="{{url('/')}}/assets/images/uae.png" alt="uae">
-                                                    العربيّة
-                                                </a>
-                                                <a class="dropdown-item" href="{{url('lang/en')}}">
-                                                    <img src="{{url('/')}}/assets/images/uk.png" alt="uk">
-                                                    ENG
-                                                </a>
-                                            @endif
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="others-options d-flex align-items-center">
-                                    <div class="option-item theme"></div>
 
-                                    <div class="option-item">
-                                        <div class="side-menu-btn">
-                                            <i class="ri-information-line" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
-                                        </div>
+
+                            <div class="others-options d-flex align-items-center">
+                                <div class="option-item">
+                                    <ul class="topbar-action">
+                                        <li class="dropdown language-option gray">
+                                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">
+                                                <i class="ri-global-line"></i>
+                                                <span class="lang-name gray">
+                                                @if(session('lang') == 'en')
+                                                        ENG
+                                                    @else
+                                                        العربيّة
+                                                    @endif
+                                        </span>
+                                            </button>
+                                            <div class="dropdown-menu language-dropdown-menu">
+                                                @if(session('lang') == 'en')
+                                                    <a class="dropdown-item" href="{{url('lang/en')}}">
+                                                        <img src="{{url('/')}}/assets/images/uk.png" alt="uk">
+                                                        ENG
+                                                    </a>
+                                                    <a class="dropdown-item" href="{{url('lang/ar')}}">
+                                                        <img src="{{url('/')}}/assets/images/uae.png" alt="uae">
+                                                        العربيّة
+                                                    </a>
+                                                @else
+                                                    <a class="dropdown-item" href="{{url('lang/ar')}}">
+                                                        <img src="{{url('/')}}/assets/images/uae.png" alt="uae">
+                                                        العربيّة
+                                                    </a>
+                                                    <a class="dropdown-item" href="{{url('lang/en')}}">
+                                                        <img src="{{url('/')}}/assets/images/uk.png" alt="uk">
+                                                        ENG
+                                                    </a>
+                                                @endif
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="option-item theme"></div>
+
+                                <div class="option-item">
+                                    <div class="side-menu-btn">
+                                        <i class="ri-information-line" data-bs-toggle="modal"
+                                           data-bs-target="#sidebarModal"></i>
                                     </div>
                                 </div>
+
                             </div>
 
 
@@ -246,7 +254,7 @@
                             <div class="option-item">
 
                                 <ul class="topbar-action">
-                                    <li class="dropdown language-option gray" >
+                                    <li class="dropdown language-option gray">
                                         <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                                 aria-haspopup="true" aria-expanded="false">
                                             <i class="ri-global-line"></i>
@@ -307,8 +315,10 @@
 
             <div class="modal-body">
                 <a href="/">
-                    <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo" alt="{{settings_value('logo_light')}}">
-                    <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo" alt="{{settings_value('logo_dark')}}">
+                    <img src="{{url('storage')}}/{{ settings_image("logo_light")}}" class="black-logo"
+                         alt="{{settings_value('logo_light')}}">
+                    <img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" class="white-logo"
+                         alt="{{settings_value('logo_dark')}}">
                 </a>
                 <div class="sidebar-content">
                     <h3> @if(session('lang') == 'en') {{about_us()->title_en}} @else {{about_us()->title_ar}}@endif</h3>

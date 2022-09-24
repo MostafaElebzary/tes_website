@@ -13,7 +13,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-team-card">
                         <div class="team-image">
-                            <img src="{{url('storage')}}/{{$team->image}}" alt="{{$team->name}}" width="150px" height="150px">
+                            <img src="{{url('storage')}}/{{$team->image}}" alt="{{$team->name}}" width="600px" height="800px">
                             <ul class="team-social">
                                 <li>
                                     <a href="{{$team->facebook}}" target="_blank">

@@ -9703,5 +9703,13 @@ Buy Now Btn
     }
 }
 
+.service-paragraph {
+    color: var(--white-color);
+}
+
+.height-15 {
+    height: 430px;
+    overflow-y: hidden;
+}
 
 /*# sourceMappingURL=style.css.map */

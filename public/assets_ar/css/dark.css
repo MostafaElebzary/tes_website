@@ -2208,5 +2208,12 @@ Default CSS
     }
 }
 
+.theme-dark .language-option button {
+    color: var(--white-color) !important;
+}
+
+.theme-dark .language-option button i {
+    color: var(--white-color) !important;
+}
 
 /*# sourceMappingURL=dark.css.map */

@@ -5,7 +5,7 @@
 @section('content')
 
     <!-- Start Page Banner Area -->
-    <div class="page-banner-area bg-5 jarallax" data-jarallax='{"speed": 0.3}'>
+    <div class="page-banner-area bg-2 jarallax" data-jarallax='{"speed": 0.3}'>
         <div class="container">
             <div class="page-banner-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                  data-aos-once="true">

@@ -185,13 +185,13 @@
                                     <a href="/services">{{$service->title}}</a>
                                 </h3>
                                 {{--                                <div>{!! $service->body !!}</div>--}}
-                                <a href="/services" class="services-btn">{{trans('lang.View More')}}</a>
+{{--                                <a href="/services" class="services-btn">{{trans('lang.View More')}}</a>--}}
                             </div>
                         </div>
                     </div>
                 @endforeach
             </div>
-            <div class="services-section-btn">
+            <div class="services-section-btn text-center">
                 <a href="/services" class="default-btn">{{trans('lang.Explore All Services')}}</a>
             </div>
         </div>
