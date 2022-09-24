@@ -4506,15 +4506,15 @@ Talk Area CSS
     margin-bottom: 0;
 }
 
-.talk-content #contactFormTwo {
+.talk-content .contactFormTwo {
     margin-top: 25px;
 }
 
-.talk-content #contactFormTwo .form-group {
+.talk-content .contactFormTwo .form-group {
     margin-bottom: 20px;
 }
 
-.talk-content #contactFormTwo .form-group .form-control {
+.talk-content .contactFormTwo .form-group .form-control {
     height: 55px;
     color: #9B8DAC;
     -webkit-box-shadow: unset !important;
@@ -4528,72 +4528,72 @@ Talk Area CSS
     font-size: 15px;
 }
 
-.talk-content #contactFormTwo .form-group .form-control::-webkit-input-placeholder {
+.talk-content .contactFormTwo .form-group .form-control::-webkit-input-placeholder {
     color: #9B8DAC;
     -webkit-transition: var(--transition);
     transition: var(--transition);
 }
 
-.talk-content #contactFormTwo .form-group .form-control:-ms-input-placeholder {
+.talk-content .contactFormTwo .form-group .form-control:-ms-input-placeholder {
     color: #9B8DAC;
     -webkit-transition: var(--transition);
     transition: var(--transition);
 }
 
-.talk-content #contactFormTwo .form-group .form-control::-ms-input-placeholder {
+.talk-content .contactFormTwo .form-group .form-control::-ms-input-placeholder {
     color: #9B8DAC;
     -webkit-transition: var(--transition);
     transition: var(--transition);
 }
 
-.talk-content #contactFormTwo .form-group .form-control::placeholder {
+.talk-content .contactFormTwo .form-group .form-control::placeholder {
     color: #9B8DAC;
     -webkit-transition: var(--transition);
     transition: var(--transition);
 }
 
-.talk-content #contactFormTwo .form-group .form-control:focus {
+.talk-content .contactFormTwo .form-group .form-control:focus {
     border-color: var(--main-color);
     background-color: transparent;
 }
 
-.talk-content #contactFormTwo .form-group .form-control:focus::-webkit-input-placeholder {
+.talk-content .contactFormTwo .form-group .form-control:focus::-webkit-input-placeholder {
     color: transparent;
 }
 
-.talk-content #contactFormTwo .form-group .form-control:focus:-ms-input-placeholder {
+.talk-content .contactFormTwo .form-group .form-control:focus:-ms-input-placeholder {
     color: transparent;
 }
 
-.talk-content #contactFormTwo .form-group .form-control:focus::-ms-input-placeholder {
+.talk-content .contactFormTwo .form-group .form-control:focus::-ms-input-placeholder {
     color: transparent;
 }
 
-.talk-content #contactFormTwo .form-group .form-control:focus::placeholder {
+.talk-content .contactFormTwo .form-group .form-control:focus::placeholder {
     color: transparent;
 }
 
-.talk-content #contactFormTwo .form-group textarea.form-control {
+.talk-content .contactFormTwo .form-group textarea.form-control {
     height: auto;
     padding-top: 15px;
 }
 
-.talk-content #contactFormTwo .default-btn {
+.talk-content .contactFormTwo .default-btn {
     border: none;
 }
 
-.talk-content #contactFormTwo .list-unstyled {
+.talk-content .contactFormTwo .list-unstyled {
     padding: 0;
     margin-bottom: 0;
 }
 
-.talk-content #contactFormTwo .list-unstyled li {
+.talk-content .contactFormTwo .list-unstyled li {
     font-size: 14px;
     margin-top: 10px;
     color: red;
 }
 
-.talk-content #contactFormTwo .text-danger {
+.talk-content .contactFormTwo .text-danger {
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 0;

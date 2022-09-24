@@ -12,9 +12,8 @@
             @foreach($teams as $team)
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-team-card">
-                        <div class="team-image" data-tilt>
-                            <img src="{{url('storage')}}/{{$team->image}}" alt="{{$team->name}}">
-
+                        <div class="team-image">
+                            <img src="{{url('storage')}}/{{$team->image}}" alt="{{$team->name}}" width="150px" height="150px">
                             <ul class="team-social">
                                 <li>
                                     <a href="{{$team->facebook}}" target="_blank">

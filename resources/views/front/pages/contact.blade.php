@@ -4,8 +4,6 @@
 @endsection
 @section('content')
 
-
-
     <!-- Start Page Banner Area -->
     <div class="page-banner-area bg-5 jarallax" data-jarallax='{"speed": 0.3}'>
         <div class="container">
@@ -36,7 +34,8 @@
                             </span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="{{trans('lang.Contact')}}">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png"
+                                 alt="{{trans('lang.Contact')}}">
                         </div>
                     </div>
                 </div>
@@ -49,7 +48,8 @@
                             </span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="{{trans('lang.Contact')}}">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png"
+                                 alt="{{trans('lang.Contact')}}">
                         </div>
                     </div>
                 </div>
@@ -62,7 +62,8 @@
                             </span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="{{trans('lang.Contact')}}">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png"
+                                 alt="{{trans('lang.Contact')}}">
                         </div>
                     </div>
                 </div>
@@ -73,7 +74,8 @@
                         <span>{{settings_value('address_'.app()->getLocale())}}</span>
 
                         <div class="overview-shape">
-                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png" alt="{{trans('lang.Contact')}}">
+                            <img src="{{url('/')}}/assets/images/overview/overview-shape.png"
+                                 alt="{{trans('lang.Contact')}}">
                         </div>
                     </div>
                 </div>
@@ -95,9 +97,9 @@
         </div>
     </div>
     <!-- End Map Area -->
-
+@endsection
 @section('js')
 
 
 @endsection
-@endsection
+

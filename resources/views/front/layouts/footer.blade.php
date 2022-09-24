@@ -74,7 +74,7 @@
                      data-aos-once="true">
                     <h3>{{trans('lang.Subscribe Newsletter')}}</h3>
 
-                    <form action="{{url('/subscribe')}}" class="newsletter-form-new" data-bs-toggle="validator" method="post">
+                    <form action="{{url('/subscribe')}}" class="newsletter-form" data-bs-toggle="validator" method="post">
                         @csrf
                         <input type="email" class="input-newsletter" placeholder="{{trans('lang.Enter your email')}}"
                                name="email"
@@ -94,13 +94,22 @@
                 <p>
                     Copyright @
                     <script>document.write(new Date().getFullYear())</script>
-                    <span>  All Rights Reserved by TES </span>
+                    <span>  All Rights Reserved by TES  </span>
 
                 </p>
             </div>
         </div>
     </div>
 
+    <div class="footer-shape-1">
+        <img src="assets/images/footer/footer-shape-3.png" alt="image">
+    </div>
+    <div class="footer-shape-2">
+        <img src="assets/images/footer/footer-shape-3.png" alt="image">
+    </div>
+    <div class="footer-shape-3">
+        <img src="assets/images/footer/footer-shape-3.png" alt="image">
+    </div>
 </footer>
 <!-- End Footer Area -->
 

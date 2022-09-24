@@ -25,6 +25,15 @@ class Service extends Resource
      */
     public static $title = 'title_ar';
 
+    public static function label()
+    {
+        return "خدماتنا";
+    }
+
+    public static function singularLabel()
+    {
+        return "خدماتنا";
+    }
     /**
      * The columns that should be searched.
      *

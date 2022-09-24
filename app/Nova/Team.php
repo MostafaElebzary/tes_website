@@ -29,6 +29,16 @@ class Team extends Resource
      *
      * @var array
      */
+
+    public static function label()
+    {
+        return "فريق العمل";
+    }
+
+    public static function singularLabel()
+    {
+        return "فريق العمل";
+    }
     public static $search = [
         'name',
         'position',

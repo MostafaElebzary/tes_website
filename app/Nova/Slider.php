@@ -37,6 +37,15 @@ class Slider extends Resource
         'body_en',
     ];
 
+    public static function label()
+    {
+        return "السليدر";
+    }
+
+    public static function singularLabel()
+    {
+        return "السليدر";
+    }
     /**
      * Get the fields displayed by the resource.
      *

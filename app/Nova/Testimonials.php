@@ -41,6 +41,16 @@ class Testimonials extends Resource
 
     ];
 
+    public static function label()
+    {
+        return "اراء العملاء";
+    }
+
+    public static function singularLabel()
+    {
+        return "اراء العملاء";
+    }
+
     /**
      * Get the fields displayed by the resource.
      *

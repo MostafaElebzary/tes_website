@@ -25,6 +25,15 @@ class WorkProcess extends Resource
      */
     public static $title = 'title_ar';
 
+    public static function label()
+    {
+        return "آلية العمل";
+    }
+
+    public static function singularLabel()
+    {
+        return "آلية العمل";
+    }
     /**
      * The columns that should be searched.
      *

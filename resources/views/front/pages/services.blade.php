@@ -10,7 +10,6 @@
             <div class="page-banner-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                  data-aos-once="true">
                 <h2>{{trans('lang.Services')}}</h2>
-
                 <ul>
                     <li>
                         <a href="/">{{trans('lang.Home')}}</a>
@@ -34,17 +33,17 @@
             <div class="row justify-content-center">
 
                 @foreach($services as $service)
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-3 col-md-6">
                         <div class="services-item">
                             <div class="services-image">
                                 <img src="{{url('storage')}}/{{$service->image}}"
                                      alt="{{$service->title}}">
                             </div>
                             <div class="services-content">
-                                <h3 style="color: white">
+                                <h3>
                                     {{$service->title}}
                                 </h3>
-                                <div style="color: white">{!! $service->body !!}</div>
+                                <div>{!! $service->body !!}</div>
 
                             </div>
                         </div>

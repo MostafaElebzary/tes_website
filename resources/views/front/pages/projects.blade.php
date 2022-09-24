@@ -42,7 +42,7 @@
 
             <div id="Container" class="row justify-content-center">
                 @foreach($projects as $project)
-                    <div class="col-lg-6 col-md-8 mix cat-{{$project->category->id}} development product-design">
+                    <div class="col-lg-4 col-md-6 mix cat-{{$project->category->id}} development product-design">
                         <div class="single-projects-item" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                              data-aos-once="true">
                             <div class="projects-image">
@@ -66,9 +66,9 @@
             </div>
         </div>
 
-        <div class="projects-bg-shape-1">
-            <img src="assets/images/projects/projects-bg-shape.png" alt="{{settings_value('service_title_'.app()->getLocale())}}">
-        </div>
+{{--        <div class="projects-bg-shape-1">--}}
+{{--            <img src="assets/images/projects/projects-bg-shape.png" alt="{{settings_value('service_title_'.app()->getLocale())}}">--}}
+{{--        </div>--}}
     </div>
     <!-- End Projects Area -->
 

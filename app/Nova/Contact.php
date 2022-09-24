@@ -24,6 +24,16 @@ class Contact extends Resource
      */
     public static $title = 'name';
 
+    public static function label()
+    {
+        return "التواصل";
+    }
+
+    public static function singularLabel()
+    {
+        return "التواصل";
+    }
+
     /**
      * The columns that should be searched.
      *
@@ -57,7 +67,7 @@ class Contact extends Resource
      */
     public function cards(Request $request)
     {
-        return [];
+        return [new Metrics\NewUsers , new Metrics\ContactPerDay];
     }
 
     /**

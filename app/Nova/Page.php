@@ -28,6 +28,15 @@ class Page extends Resource
 
     public static $priority = 1;
 
+    public static function label()
+    {
+        return "الصفحات";
+    }
+
+    public static function singularLabel()
+    {
+        return "الصفحات";
+    }
     /**
      * The columns that should be searched.
      *

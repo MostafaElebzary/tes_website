@@ -26,6 +26,15 @@ class Setting extends Resource
      */
     public static $title = 'key';
 
+    public static function label()
+    {
+        return "الاعدادات";
+    }
+
+    public static function singularLabel()
+    {
+        return "الاعدادات";
+    }
     /**
      * The columns that should be searched.
      *

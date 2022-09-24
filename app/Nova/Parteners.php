@@ -23,6 +23,15 @@ class Parteners extends Resource
      */
     public static $title = 'id';
 
+    public static function label()
+    {
+        return "شركاء النجاح";
+    }
+
+    public static function singularLabel()
+    {
+        return "شركاء النجاح";
+    }
     /**
      * The columns that should be searched.
      *

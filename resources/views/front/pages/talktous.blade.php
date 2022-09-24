@@ -3,12 +3,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-12">
-                <div class="talk-image" data-tilt>
-                    <img src="{{url('storage')}}/{{settings_image('contact_us_image')}}" alt="{{settings_value('contact_us_image')}}">
-
-                    <div class="talk-circle">
-                        <img src="{{url('/')}}/assets/images/talk/talk-circle.png" alt="{{settings_value('contact_us_image')}}">
-                    </div>
+                <div class="talk-image">
+                    <img src="{{url('storage')}}/{{settings_image('contact_us_image')}}"
+                         alt="{{settings_value('contact_us_image')}}">
                 </div>
             </div>
 
@@ -18,7 +15,7 @@
                     <h3>{{settings_value('contact_us_title_'.app()->getLocale())}} <span class="overlay"></span></h3>
                     <p>{{settings_value('contact_us_desc_'.app()->getLocale())}}.</p>
 
-                    <form id="contactFormTwo-new" method="post" action="{{url('contact')}}">
+                    <form class="contactFormTwo" method="post" action="{{url('contact')}}">
                         @csrf
                         <div class="row">
                             <div class="col-lg-6 col-md-6">

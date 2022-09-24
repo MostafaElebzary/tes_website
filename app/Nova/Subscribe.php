@@ -23,6 +23,15 @@ class Subscribe extends Resource
      */
     public static $title = 'email';
 
+    public static function label()
+    {
+        return "الاشتراكات";
+    }
+
+    public static function singularLabel()
+    {
+        return "الاشتراكات";
+    }
     /**
      * The columns that should be searched.
      *

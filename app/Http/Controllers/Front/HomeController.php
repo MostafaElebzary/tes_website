@@ -58,6 +58,7 @@ class HomeController extends Controller
 
     public function about()
     {
+        $data['projects'] = Project::all();
         $data['title'] = trans('lang.AboutUs');
         $data['about'] = Page::findOrFail(2);
         $data['vision'] = Page::findOrFail(3);

@@ -26,6 +26,17 @@ class Project extends Resource
      */
     public static $title = 'title_ar';
     public static $priority = 2;
+
+    public static function label()
+    {
+        return "المشاريع";
+    }
+
+    public static function singularLabel()
+    {
+        return "المشاريع";
+    }
+
     /**
      * The columns that should be searched.
      *
@@ -43,7 +54,7 @@ class Project extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function fields(Request $request)
@@ -51,12 +62,11 @@ class Project extends Resource
         return [
 
 
-
             ID::make(__('ID'), 'id')->sortable(),
-            BelongsTo::make('Category' ,'Category',Category::class)->rules('required'),
+            BelongsTo::make('Category', 'Category', Category::class)->rules('required'),
             Text::make(trans('lang.title_ar'), 'title_ar')->rules('required'),
             Text::make(trans('lang.title_en'), 'title_en')->rules('required'),
-            Text::make(trans('lang.url'), 'url')->hideFromIndex()->rules('required','url'),
+            Text::make(trans('lang.url'), 'url')->hideFromIndex()->rules('required', 'url'),
             Trix::make(trans('lang.body_ar'), 'body_ar')->rules('required'),
             Trix::make(trans('lang.body_en'), 'body_en')->rules('required'),
             Image::make(trans('lang.image'), 'image')->creationRules('required'),
@@ -66,18 +76,18 @@ class Project extends Resource
     /**
      * Get the cards available for the request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function cards(Request $request)
     {
-        return [];
+        return [new Metrics\ProjectPerCategory];
     }
 
     /**
      * Get the filters available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function filters(Request $request)
@@ -88,7 +98,7 @@ class Project extends Resource
     /**
      * Get the lenses available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function lenses(Request $request)
@@ -99,7 +109,7 @@ class Project extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return array
      */
     public function actions(Request $request)
