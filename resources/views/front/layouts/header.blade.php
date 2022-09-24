@@ -50,6 +50,7 @@
         <link rel="stylesheet" href="{{url('/')}}/assets/css/footer.css">
         <link rel="stylesheet" href="{{url('/')}}/assets/css/dark.css">
         <link rel="stylesheet" href="{{url('/')}}/assets/css/responsive.css">
+
     @else
 
         <meta name="description" content="{{settings_value('meta_description_ar')}}">
