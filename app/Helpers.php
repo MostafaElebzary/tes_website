@@ -3,6 +3,7 @@
 use App\Models\Page;
 use App\Models\Setting;
 use App\Models\User;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Validator;
 
 // send fcm notification
@@ -238,23 +239,27 @@ if (!function_exists('HttpPost')) {
 function settings_image($key)
 {
 
-    return Setting::where('key', $key)->first()->image;
+    return Cache::get('settings')->where('key', $key)->first()->image;
+
+//    return Setting::where('key', $key)->first()->image;
 }
 
 function settings_value($key)
 {
-    return Setting::where('key',$key)->first()->value;
+    return Cache::get('settings')->where('key', $key)->first()->value;
+//    return   Setting::where('key',$key)->first()->value;
 
 }
 
 
 function about_us()
 {
-    return Page::where('id',2)->first();
+    return Page::where('id', 2)->first();
 
 }
 
-function AbstractHTMLContents($html, $maxLength=100){
+function AbstractHTMLContents($html, $maxLength = 100)
+{
     mb_internal_encoding("UTF-8");
     $printedLength = 0;
     $position = 0;
@@ -263,12 +268,11 @@ function AbstractHTMLContents($html, $maxLength=100){
 
     $html = $content = preg_replace("/<img[^>]+\>/i", "", $html);
 
-    while ($printedLength < $maxLength && preg_match('{</?([a-z]+)[^>]*>|&#?[a-zA-Z0-9]+;}', $html, $match, PREG_OFFSET_CAPTURE, $position))
-    {
+    while ($printedLength < $maxLength && preg_match('{</?([a-z]+)[^>]*>|&#?[a-zA-Z0-9]+;}', $html, $match, PREG_OFFSET_CAPTURE, $position)) {
         list($tag, $tagPosition) = $match[0];
         // Print text leading up to the tag.
         $str = mb_strcut($html, $position, $tagPosition - $position);
-        if ($printedLength + mb_strlen($str) > $maxLength){
+        if ($printedLength + mb_strlen($str) > $maxLength) {
             $newstr = mb_strcut($str, 0, $maxLength - $printedLength);
             $newstr = preg_replace('~\s+\S+$~', '', $newstr);
             $newContent .= $newstr;
@@ -289,7 +293,7 @@ function AbstractHTMLContents($html, $maxLength=100){
                 $openingTag = array_pop($tags);
                 assert($openingTag == $tagName); // check that tags are properly nested.
                 $newContent .= $tag;
-            } else if ($tag[mb_strlen($tag) - 2] == '/'){
+            } else if ($tag[mb_strlen($tag) - 2] == '/') {
                 // Self-closing tag.
                 $newContent .= $tag;
             } else {
@@ -304,16 +308,14 @@ function AbstractHTMLContents($html, $maxLength=100){
     }
 
     // Print any remaining text.
-    if ($printedLength < $maxLength && $position < mb_strlen($html))
-    {
+    if ($printedLength < $maxLength && $position < mb_strlen($html)) {
         $newstr = mb_strcut($html, $position, $maxLength - $printedLength);
         $newstr = preg_replace('~\s+\S+$~', '', $newstr);
         $newContent .= $newstr;
     }
 
     // Close any open tags.
-    while (!empty($tags))
-    {
+    while (!empty($tags)) {
         $newContent .= sprintf('</%s>', array_pop($tags));
     }
 
