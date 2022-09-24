@@ -714,7 +714,7 @@ Main Hero Area CSS
 }
 
 .main-hero-item {
-  background-image: url(../../assets/images/main-hero/hero-bg-1.jpg);
+  background-image: url(../images/main-hero/hero-bg-1.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -725,11 +725,11 @@ Main Hero Area CSS
 }
 
 .main-hero-item.item-bg-2 {
-  background-image: url(../../assets/images/main-hero/hero-bg-2.jpg);
+  background-image: url(../images/main-hero/hero-bg-2.jpg);
 }
 
 .main-hero-item.item-bg-3 {
-  background-image: url(../../assets/images/main-hero/hero-bg-3.jpg);
+  background-image: url(../images/main-hero/hero-bg-3.jpg);
 }
 
 .main-hero-item::before {
@@ -868,7 +868,7 @@ Main Banner Area CSS
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-image: url(../../assets/images/main-banner/banner-bg.jpg);
+  background-image: url(../images/main-banner/banner-bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1026,7 +1026,7 @@ Main Banner Area CSS
 Partner Area CSS
 =================================================*/
 .partner-area {
-  background-image: url(../../assets/images/partner/partner-bg.jpg);
+  background-image: url(../images/partner/partner-bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4616,7 +4616,7 @@ Team Area CSS
 Overview Area CSS
 =================================================*/
 .overview-area {
-  background-image: url(../../assets/images/overview/overview-bg.jpg);
+  background-image: url(../images/overview/overview-bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4691,7 +4691,7 @@ Overview Area CSS
 Page Banner Area CSS
 =================================================*/
 .page-banner-area {
-  background-image: url(../../assets/images/page-banner/banner-bg.jpg);
+  background-image: url(../images/page-banner/banner-bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -4700,23 +4700,23 @@ Page Banner Area CSS
 }
 
 .page-banner-area.bg-2 {
-  background-image: url(../../assets/images/page-banner/banner-bg-2.jpg);
+  background-image: url(../images/page-banner/banner-bg-2.jpg);
 }
 
 .page-banner-area.bg-3 {
-  background-image: url(../../assets/images/page-banner/banner-bg-3.jpg);
+  background-image: url(../images/page-banner/banner-bg-3.jpg);
 }
 
 .page-banner-area.bg-4 {
-  background-image: url(../../assets/images/page-banner/banner-bg-4.jpg);
+  background-image: url(../images/page-banner/banner-bg-4.jpg);
 }
 
 .page-banner-area.bg-5 {
-  background-image: url(../../assets/images/page-banner/banner-bg-5.jpg);
+  background-image: url(../images/page-banner/banner-bg-5.jpg);
 }
 
 .page-banner-area.bg-6 {
-  background-image: url(../../assets/images/page-banner/banner-bg-6.jpg);
+  background-image: url(../images/page-banner/banner-bg-6.jpg);
   background-attachment: fixed;
 }
 
@@ -5348,7 +5348,7 @@ Career Area CSS
 Apply Area CSS
 =================================================*/
 .apply-area {
-  background-image: url(../../assets/images/apply-bg.jpg);
+  background-image: url(../images/apply-bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -6245,7 +6245,7 @@ Privacy Policy Area CSS
 Coming Soon Area CSS
 =================================================*/
 .coming-soon-area {
-  background-image: url(../../assets/images/coming-soon-bg.jpg);
+  background-image: url(../images/coming-soon-bg.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8964,15 +8964,15 @@ Widget Sidebar CSS
 }
 
 .widget-area .widget_recent_post .item .thumb .fullimage.bg1 {
-  background-image: url(../../assets/images/blog/blog-1.jpg);
+  background-image: url(../images/blog/blog-1.jpg);
 }
 
 .widget-area .widget_recent_post .item .thumb .fullimage.bg2 {
-  background-image: url(../../assets/images/blog/blog-2.jpg);
+  background-image: url(../images/blog/blog-2.jpg);
 }
 
 .widget-area .widget_recent_post .item .thumb .fullimage.bg3 {
-  background-image: url(../../assets/images/blog/blog-3.jpg);
+  background-image: url(../images/blog/blog-3.jpg);
 }
 
 .widget-area .widget_recent_post .item .thumb::before, .widget-area .widget_recent_post .item .thumb::after {
@@ -9094,15 +9094,15 @@ Widget Sidebar CSS
 }
 
 .widget-area .widget_recent_courses .item .thumb .fullimage.bg1 {
-  background-image: url(../../assets/images/courses/courses-1.jpg);
+  background-image: url(../images/courses/courses-1.jpg);
 }
 
 .widget-area .widget_recent_courses .item .thumb .fullimage.bg2 {
-  background-image: url(../../assets/images/courses/courses-2.jpg);
+  background-image: url(../images/courses/courses-2.jpg);
 }
 
 .widget-area .widget_recent_courses .item .thumb .fullimage.bg3 {
-  background-image: url(../../assets/images/courses/courses-3.jpg);
+  background-image: url(../images/courses/courses-3.jpg);
 }
 
 .widget-area .widget_recent_courses .item .thumb::before, .widget-area .widget_recent_courses .item .thumb::after {

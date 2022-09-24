@@ -2,7 +2,7 @@
 Topbar Area CSS
 =================================================*/
 .topbar-area {
-    background-image: url(../../assets/images/topbar-bg.jpg);
+    background-image: url(../images/topbar-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -50,7 +50,7 @@ Topbar Area CSS
             a {
                 color: var(--white-color);
                 font-weight: 400;
-    
+
                 &:hover {
                     color: var(--main-color);
                 }
@@ -70,7 +70,7 @@ Topbar Area CSS
 }
 .language-option {
     padding: 0;
-    
+
     button {
         padding: 0;
         background-color: transparent;
@@ -175,7 +175,7 @@ Navbar Area CSS
                 position: relative;
                 margin-left: 15px;
                 margin-right: 15px;
-                
+
                 a {
                     color: #CDC4D9;
                     font-size: var(--font-size);
@@ -187,7 +187,7 @@ Navbar Area CSS
                     transition: var(--transition);
                     font-family: var(--heading-font-family);
                     position: relative;
-                    
+
                     i {
                         font-size: 14px;
                         position: relative;
@@ -247,7 +247,7 @@ Navbar Area CSS
 
                     li {
                         margin: 0;
-                        
+
                         a {
                             padding: 10px 20px;
                             position: relative;
@@ -255,7 +255,7 @@ Navbar Area CSS
                             color: var(--black-color);
                             font-size: 15px;
                             font-weight: 500;
-                            
+
                             i {
                                 margin: 0;
                                 position: absolute;
@@ -296,11 +296,11 @@ Navbar Area CSS
                             right: auto;
                             margin-top: 15px;
                             visibility: hidden;
-                            
+
                             li {
                                 a {
                                     color: var(--black-color);
-                                    
+
                                     &:hover, &:focus, &.active {
                                         color: var(--main-color);
                                     }
@@ -310,11 +310,11 @@ Navbar Area CSS
                                     opacity: 0;
                                     right: 230px;
                                     visibility: hidden;
-        
+
                                     li {
                                         a {
                                             color: var(--black-color);
-        
+
                                             &:hover, &:focus, &.active {
                                                 color: var(--main-color);
                                             }
@@ -324,11 +324,11 @@ Navbar Area CSS
                                             opacity: 0;
                                             left: -230px;
                                             visibility: hidden;
-                
+
                                             li {
                                                 a {
                                                     color: var(--black-color);
-                
+
                                                     &:hover, &:focus, &.active {
                                                         color: var(--main-color);
                                                     }
@@ -338,11 +338,11 @@ Navbar Area CSS
                                                     opacity: 0;
                                                     left: 230px;
                                                     visibility: hidden;
-                        
+
                                                     li {
                                                         a {
                                                             color: var(--black-color);
-                
+
                                                             &:hover, &:focus, &.active {
                                                                 color: var(--main-color);
                                                             }
@@ -352,11 +352,11 @@ Navbar Area CSS
                                                             opacity: 0;
                                                             left: -230px;
                                                             visibility: hidden;
-                                
+
                                                             li {
                                                                 a {
                                                                     color: var(--black-color);
-                
+
                                                                     &:hover, &:focus, &.active {
                                                                         color: var(--main-color);
                                                                     }
@@ -366,11 +366,11 @@ Navbar Area CSS
                                                                     opacity: 0;
                                                                     left: 230px;
                                                                     visibility: hidden;
-                                        
+
                                                                     li {
                                                                         a {
                                                                             color: var(--black-color);
-                
+
                                                                             &:hover, &:focus, &.active {
                                                                                 color: var(--main-color);
                                                                             }
@@ -471,7 +471,7 @@ Navbar Area CSS
             .option-item {
                 position: relative;
                 margin-right: 25px;
-                
+
                 &:last-child {
                     margin-right: 0;
                 }
@@ -543,7 +543,7 @@ Navbar Area CSS
                 .nav-item {
                     a {
                         color: var(--black-color);
-                        
+
                         &:hover, &:focus, &.active {
                             color: var(--main-color);
                         }
@@ -557,7 +557,7 @@ Navbar Area CSS
                         li {
                             a {
                                 color: var(--black-color);
-                                
+
                                 &::before {
                                     background: var(--btn-gradient-color);
                                 }
@@ -569,7 +569,7 @@ Navbar Area CSS
                                 li {
                                     a {
                                         color: var(--black-color);
-                                        
+
                                         &:hover, &:focus, &.active {
                                             color: var(--main-color);
                                         }
@@ -578,7 +578,7 @@ Navbar Area CSS
                                         li {
                                             a {
                                                 color: var(--black-color);
-            
+
                                                 &:hover, &:focus, &.active {
                                                     color: var(--main-color);
                                                 }
@@ -587,7 +587,7 @@ Navbar Area CSS
                                                 li {
                                                     a {
                                                         color: var(--black-color);
-                    
+
                                                         &:hover, &:focus, &.active {
                                                             color: var(--main-color);
                                                         }
@@ -596,7 +596,7 @@ Navbar Area CSS
                                                         li {
                                                             a {
                                                                 color: var(--black-color);
-                    
+
                                                                 &:hover, &:focus, &.active {
                                                                     color: var(--main-color);
                                                                 }
@@ -605,7 +605,7 @@ Navbar Area CSS
                                                                 li {
                                                                     a {
                                                                         color: var(--black-color);
-                    
+
                                                                         &:hover, &:focus, &.active {
                                                                             color: var(--main-color);
                                                                         }
@@ -614,7 +614,7 @@ Navbar Area CSS
                                                                         li {
                                                                             a {
                                                                                 color: var(--black-color);
-                    
+
                                                                                 &:hover, &:focus, &.active {
                                                                                     color: var(--main-color);
                                                                                 }
@@ -699,14 +699,14 @@ Navbar Area CSS
                 .option-item {
                     .search-btn {
                         color: var(--black-color);
-    
+
                         &:hover {
                             color: var(--main-color);
                         }
                     }
                     .close-btn {
                         color: var(--black-color);
-    
+
                         &:hover {
                             color: var(--main-color);
                         }
@@ -781,7 +781,7 @@ Navbar Area CSS
             z-index: 2;
             padding: 15px;
             border-radius: 15px;
-            
+
             &.active {
                 opacity: 1;
                 visibility: visible;
@@ -796,7 +796,7 @@ Navbar Area CSS
             .option-item {
                 position: relative;
                 margin-right: 25px;
-                
+
                 &:last-child {
                     margin-right: 0;
                 }
@@ -858,7 +858,7 @@ Search Popup CSS
 =================================================*/
 .search-overlay {
     display: none;
-    
+
     &.search-popup {
         position: absolute;
         top: 100%;
@@ -870,7 +870,7 @@ Search Popup CSS
 
         .search-form {
             position: relative;
-            
+
             .search-input {
                 display: block;
                 width: 100%;
@@ -881,7 +881,7 @@ Search Popup CSS
                 border-radius: 30px;
                 background-color: #f2f2f2;
                 color: var(--paragraph-color);
-                
+
                 &::placeholder {
                     color: var(--paragraph-color);
                     transition: var(--transition);
@@ -947,7 +947,7 @@ Sidebar Modal CSS
                     box-shadow: unset;
                     z-index: 2;
                     opacity: 1;
-                    
+
                     i {
                         display: inline-block;
                         height: 30px;
@@ -958,7 +958,7 @@ Sidebar Modal CSS
                         font-size: 20px;
                         transition: var(--transition);
                         border-radius: 50%;
-        
+
                         &:hover {
                             background-color: var(--optional-color);
                         }
@@ -983,7 +983,7 @@ Sidebar Modal CSS
     &.modal {
         .modal-body {
             padding: 25px;
-            
+
             .sidebar-content {
                 margin-top: 35px;
 
@@ -1045,7 +1045,7 @@ Sidebar Modal CSS
                 li {
                     display: inline-block;
                     margin-right: 8px;
-                    
+
                     &:last-child {
                         margin-right: 0;
                     }
@@ -1098,7 +1098,7 @@ Sidebar Modal CSS
                             &:focus {
                                 border-color: var(--main-color);
                                 background-color: transparent;
-                        
+
                                 &::placeholder {
                                     color: transparent;
                                 }
@@ -1137,11 +1137,11 @@ Sidebar Modal CSS
 // Mobile and iPad Navbar Responsive
 @media only screen and (max-width: 1199px) {
     .main-responsive-nav {
-        display: block; 
+        display: block;
 
         .main-responsive-menu {
             position: relative;
-            
+
             &.mean-container {
                 .mean-nav {
                     ul {
@@ -1180,7 +1180,7 @@ Sidebar Modal CSS
                 &.meanmenu-reveal {
                     padding: 5px 0 0 0;
                     color: var(--white-color);
-    
+
                     span {
                         display: block;
                         background: var(--white-color);
@@ -1355,7 +1355,7 @@ Sidebar Modal CSS
         .option-inner {
             .others-options {
                 margin-left: 0;
-                
+
             }
         }
     }
@@ -1467,7 +1467,7 @@ Sidebar Modal CSS
         .option-inner {
             .others-options {
                 margin-left: 0;
-                
+
             }
         }
     }

@@ -5,15 +5,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 
     @if(session('lang') == 'en')
         <meta name="description" content="{{settings_value('meta_description_en')}}">
         <meta name="keywords" content="{{settings_value('meta_keywords_en')}}">
         <meta name="author" content="TESolution Software House">
 
+
         <style>
-
-
             :root {
                 --main-font-family: 'Open Sans', sans-serif;
                 --heading-font-family: 'Jost', sans-serif;
@@ -71,7 +73,7 @@
         <link rel="stylesheet" href="{{url('/')}}/assets_ar/css/responsive.css">
         <link rel="stylesheet" href="{{url('/')}}/assets_ar/css/rtl.css">
 
-        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600&display=swap" rel="stylesheet">
     @endif
 
     <style>
@@ -88,10 +90,10 @@
 
     <title>TES - @yield('title')</title>
 
-    <link rel="icon" type="image/png" href="{{url('/')}}/assets/images/favicon.png">
+    <link rel="icon" type="image/png" href="{{url('storage')}}/{{ settings_image("favicon")}}">
 </head>
 
-<body @if(session('lang') == 'en') style="font-family: Tajawal" @endif>
+<body>
 
 <!-- Start Preloader Area -->
 <div class="preloader">
@@ -143,7 +145,6 @@
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
-
                             <li class="nav-item">
                                 <a href="/"
                                    class="nav-link @if(request()->segment(1) == "" || request()->segment(1) == "home") active @endif">{{trans('lang.Home')}}</a>
@@ -210,14 +211,18 @@
                                         </div>
                                     </li>
                                 </ul>
-                            </div>
+                                <div class="others-options d-flex align-items-center">
+                                    <div class="option-item theme"></div>
 
-                            <div class="option-item">
-                                <div class="side-menu-btn">
-                                    <i class="ri-bar-chart-horizontal-line" data-bs-toggle="modal"
-                                       data-bs-target="#sidebarModal"></i>
+                                    <div class="option-item">
+                                        <div class="side-menu-btn">
+                                            <i class="ri-information-line" data-bs-toggle="modal" data-bs-target="#sidebarModal"></i>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </nav>
@@ -309,7 +314,7 @@
                     <p> @if(session('lang') == 'en')  {!! about_us()->body_en !!} @else  {!! about_us()->body_ar !!} @endif</p>
 
                     <div class="sidebar-btn">
-                        <a href="/contact-us" class="default-btn">Let’s Talk</a>
+                        <a href="/contact-us" class="default-btn">{{trans('lang.Let’s Talk')}}</a>
                     </div>
                 </div>
                 <div class="sidebar-contact-info">
@@ -337,10 +342,10 @@
                     <li><a href="{{ settings_value("instagram")}}" target="_blank"><i class="ri-instagram-fill"></i></a>
                     </li>
                 </ul>
-                <div class="talk-content">
+                <div class="contact-form">
                     <h3>{{trans('lang.Ready to Get Started?')}}</h3>
 
-                    <form id="contactFormTwo-new" method="post" action="{{url('contact')}}">
+                    <form id="contactForm" method="post" action="{{url('contact')}}">
                         @csrf
                         <div class="row">
                             <div class="col-lg-12 col-md-6">
