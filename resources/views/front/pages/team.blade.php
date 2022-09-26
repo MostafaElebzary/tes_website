@@ -2,7 +2,6 @@
 <div class="team-area pt-100 pb-75">
     <div class="container">
         <div class="section-title section-style-two">
-            <div class="section-bg-text">TEAM</div>
             <span>{{trans('lang.TEAM MEMBER')}}</span>
             <h2>{{settings_value('team_title_'.app()->getLocale())}} <span class="overlay"></span></h2>
             <p>{{settings_value('team_desc_'.app()->getLocale())}} </p>

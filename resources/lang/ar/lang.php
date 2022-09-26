@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'url' => "الرابط",
     'Home' => "الرئيسية",
     'Services'=>"الخدمات",
     'Projects'=>"المشاريع",

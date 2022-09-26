@@ -116,7 +116,6 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="about-wrap-content" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                          data-aos-once="true">
-                        <div class="about-bg-text">ABOUT US</div>
                         <span>{{$about->page}}</span>
                         <h3>{{$about->title}} <span class="overlay"></span></h3>
                         <p>{!! $about->body !!}</p>

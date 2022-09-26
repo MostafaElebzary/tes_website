@@ -2,7 +2,6 @@
 <div class="choose-area pt-100 pb-75">
     <div class="container">
         <div class="section-title section-style-two">
-            <div class="section-bg-text">PROCESS</div>
             <span>{{trans('lang.work process')}}</span>
             <h2>{{settings_value('work_process_title_'.app()->getLocale())}} <span class="overlay"></span></h2>
             <p>{{settings_value('work_process_desc_'.app()->getLocale())}}</p>
@@ -18,7 +17,6 @@
                                  alt="{{$single->title}}">
                             {{--                        </a>--}}
 
-                            <div class="number">{{$key+1}}</div>
                         </div>
                         <div class="choose-content">
                             <h3>
@@ -43,7 +41,6 @@
                 <div class="col-lg-4 col-md-12">
                     <div class="projects-section-content" data-aos="fade-down" data-aos-delay="80"
                          data-aos-duration="800" data-aos-once="true">
-                        <div class="projects-bg-text">WORK</div>
                         <span>{{trans('lang.PROJECTS')}}</span>
                         <h3>{{settings_value('project_title_'.app()->getLocale())}} <span class="overlay"></span></h3>
                         <p>{{settings_value('project_desc_'.app()->getLocale())}}.</p>
@@ -100,7 +97,6 @@
 <div class="testimonials-area ptb-100">
     <div class="container-fluid">
         <div class="section-title section-style-two">
-            <div class="section-bg-text">FEEDBACK</div>
             <span>{{trans('lang.testimonials')}}</span>
             <h2>{{settings_value('testimonials_title_'.app()->getLocale())}} <span class="overlay"></span></h2>
         </div>
