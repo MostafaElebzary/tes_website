@@ -106,7 +106,7 @@
                 <div class="single-testimonials-card" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                      data-aos-once="true">
                     <p>
-                        {!! $testimonial->body !!}
+                        {{strip_tags($testimonial->body)}}
                     </p>
 
                     <div class="info-item-box">
