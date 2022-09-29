@@ -38,5 +38,6 @@ return [
     'Enter your email' => 'Enter your email',
     'Subscribe' => 'Subscribe',
     'work process' => 'work process',
+    'Let’s Talk' => 'Let’s Talk',
 
 ];

@@ -51,5 +51,6 @@ return [
     'Enter your email' => 'أدخل بريدك الإلكتروني',
     'Subscribe' => 'الإشتراك',
     'work process' => 'آلية العمل',
+    'Let’s Talk' => 'تواصل معنا',
 
 ];
