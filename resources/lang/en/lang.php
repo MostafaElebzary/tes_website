@@ -39,5 +39,6 @@ return [
     'Subscribe' => 'Subscribe',
     'work process' => 'work process',
     'Let’s Talk' => 'Let’s Talk',
+    'Ready to Get Started?' => 'Ready to Get Started?',
 
 ];

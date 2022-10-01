@@ -52,5 +52,7 @@ return [
     'Subscribe' => 'الإشتراك',
     'work process' => 'آلية العمل',
     'Let’s Talk' => 'تواصل معنا',
+    'Ready to Get Started?' => 'على استعداد للبدء؟',
+
 
 ];
