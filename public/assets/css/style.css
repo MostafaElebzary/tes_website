@@ -945,7 +945,7 @@ Main Banner Area CSS
     position: absolute;
     left: 0;
     top: 0;
-    background: var(--btn-gradient-color);
+    background: var(--main-color);
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -4602,7 +4602,6 @@ Talk Area CSS
 .talk-content.margin-zero {
     margin-top: 0;
 }
-
 
 
 /*================================================
