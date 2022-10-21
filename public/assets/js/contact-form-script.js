@@ -7,7 +7,7 @@
         if (event.isDefaultPrevented()) {
             formError();
             submitMSG(false, "Did you fill in the form properly?");
-        }
+        } 
         else {
             event.preventDefault();
             submitForm();
@@ -29,7 +29,7 @@
             success : function(text){
                 if (text == "success"){
                     formSuccess();
-                }
+                } 
                 else {
                     formError();
                     submitMSG(false,text);
@@ -49,7 +49,7 @@
     function submitMSG(valid, msg){
         if(valid){
             var msgClasses = "h4 tada animated text-success";
-        }
+        } 
         else {
             var msgClasses = "h4 text-danger";
         }

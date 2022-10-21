@@ -797,7 +797,7 @@ Navbar Area CSS
     position: absolute;
     right: 10px;
     top: 10px;
-    max-width: 105px;
+    max-width: 215px;
     background-color: var(--white-color);
     -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
@@ -1366,7 +1366,7 @@ Sidebar Modal CSS
         background: var(--black-color);
     }
     .navbar-style-two-with-color .others-option-for-responsive .dot-menu {
-        top: -38px;
+        top: -51px;
     }
     .navbar-style-two-with-color .others-option-for-responsive .dot-menu .inner .circle {
         background-color: var(--black-color);

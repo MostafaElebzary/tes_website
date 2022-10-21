@@ -7,22 +7,24 @@
             <p>{{settings_value('team_desc_'.app()->getLocale())}} </p>
         </div>
 
-        <div class="row justify-content-center">
-            @foreach($teams as $team)
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-team-card">
-                        <div class="team-image">
-                            <img src="{{url('storage')}}/{{$team->image}}" alt="{{$team->name}}" width="600px" height="800px">
+        <div class="partner-area ptb-100" style="background-color: #FFFFFF">
+            <div class="container">
+                <div class="partner-slides owl-carousel owl-theme">
+                    @foreach($teams as $team)
+                        <div class="partner-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
+                             data-aos-once="true">
+                            <a href="#" style="text-align: center">
+                                <img src="{{url('storage')}}/{{$team->image}}" alt="{{$team->name}}" width="600px" height="800px">
+                                <h6>{{$team->name}}</h6>
+                                <span>{{$team->position}}</span>
+                            </a>
                         </div>
-                        <div class="team-content">
-                            <h3>{{$team->name}}</h3>
-                            <span>{{$team->position}}</span>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-            @endforeach
-
+            </div>
         </div>
+
+
     </div>
 </div>
 <!-- End Team Area -->
