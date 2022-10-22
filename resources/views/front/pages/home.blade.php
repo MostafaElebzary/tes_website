@@ -146,7 +146,7 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6">
-                        <div class="single-about-card" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
+                        <div class="aos-animate" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                              data-aos-once="true">
                             <div class="card-image">
                                 <img src="{{url('storage')}}/{{$mission->image}}" alt="{{$mission->page}}">
