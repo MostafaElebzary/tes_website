@@ -6,7 +6,8 @@
                 <div class="single-footer-widget" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                      data-aos-once="true">
                     <div class="widget-logo">
-                        <a href="/"><img src="{{url('storage')}}/{{ settings_image("logo_dark")}}" alt="{{settings_value('logo_dark')}}"></a>
+                        <a href="/"><img src="{{url('storage')}}/{{ settings_image("logo_dark")}}"
+                                         alt="{{settings_value('logo_dark')}}"></a>
                     </div>
                     <p>{{ settings_value("footer_desc_".app()->getLocale())}}.</p>
 
@@ -74,7 +75,8 @@
                      data-aos-once="true">
                     <h3>{{trans('lang.Subscribe Newsletter')}}</h3>
 
-                    <form action="{{url('/subscribe')}}" class="newsletter-form" data-bs-toggle="validator" method="post">
+                    <form action="{{url('/subscribe')}}" class="newsletter-form" data-bs-toggle="validator"
+                          method="post">
                         @csrf
                         <input type="email" class="input-newsletter" placeholder="{{trans('lang.Enter your email')}}"
                                name="email"
@@ -118,6 +120,7 @@
     <i class="ri-arrow-up-s-line"></i>
 </div>
 <!-- End Go Top Area -->
+
 
 @if(session('lang') == 'en')
     <!-- Links of JS files -->
@@ -172,8 +175,22 @@
     <script defer src="{{url('/')}}/assets_ar/js/main.js"></script>
 
 
-    @endif
+@endif
 
-    @yield('js')
-    </body>
-    </html>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/6341c3ef37898912e96d9202/1geseao5s';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+@yield('js')
+</body>
+</html>
