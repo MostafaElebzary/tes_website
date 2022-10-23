@@ -58,14 +58,9 @@ Route::get('/link', function () {
     Artisan::call('storage:link');
 });
 Route::get('/cached', function () {
-//    Artisan::call('optimize');
     Cache::forget('settings');
     Cache::forever('settings', \App\Models\Setting::all());
 
-//
-//    Cache::remember('settings', 99999999999999, function () {
-//        return \App\Models\Setting::all();
-//    });
     return redirect()->back();
 });
 

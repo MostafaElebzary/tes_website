@@ -76,21 +76,22 @@
     </div>
     <!-- End Projects Area -->
 @endif
-<div class="video-area-box">
-    <div class="container">
-        <div class="video-view-content" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
-             data-aos-once="true">
-            <div class="video-image">
-                <img src="{{url('storage')}}/{{settings_image("video_image")}}" alt="{{settings_value("video_image")}}">
-            </div>
 
-            <a href="{{settings_value('video_url')}}" class="video-btn popup-youtube">
-                <i class="ri-play-mini-fill"></i>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- End Video Area -->
+{{--<div class="video-area-box">--}}
+{{--    <div class="container">--}}
+{{--        <div class="video-view-content" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"--}}
+{{--             data-aos-once="true">--}}
+{{--            <div class="video-image">--}}
+{{--                <img src="{{url('storage')}}/{{settings_image("video_image")}}" alt="{{settings_value("video_image")}}">--}}
+{{--            </div>--}}
+
+{{--            <a href="{{settings_value('video_url')}}" class="video-btn popup-youtube">--}}
+{{--                <i class="ri-play-mini-fill"></i>--}}
+{{--            </a>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
+{{--<!-- End Video Area -->--}}
 
 
 <!-- Start Testimonials Area -->
