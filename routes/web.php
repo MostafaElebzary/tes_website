@@ -28,6 +28,9 @@ Route::post('/subscribe', [HomeController::class, 'Subscribe']);
 Route::post('/contact', [HomeController::class, 'Contact_us']);
 Route::get('/site_map.xml', [HomeController::class, 'sitemap']);
 
+
+Route::get('/project/efood', [HomeController::class, 'efood']);
+
 //Route::get("site_map.xml", array(
 //    "as"   => "sitemap",
 //    "uses" => "HomeController@sitemap", // or any other controller you want to use
