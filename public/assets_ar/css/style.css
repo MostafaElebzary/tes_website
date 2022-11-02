@@ -2735,6 +2735,122 @@ Projects Details Area CSS
 
 
 /*================================================
+efood Area CSS
+=================================================*/
+.efood-content {
+    margin: 30px 0;
+}
+
+.efood-content .container {
+    max-width: 1004px;
+}
+
+.efood-content .container .efood-details-header h1 {
+    font-size: 28px;
+    color: #454545;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.efood-content .container .efood-details-bg {
+    max-width: 75%;
+    margin: auto;
+}
+
+.efood-content .container .efood-details-data {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #545454;
+}
+
+.efood-content .container .efood-details-data ol {
+    list-style: arabic-indic;
+}
+
+.efood-content .container .efood-details-data .efood-slide {
+    padding: 10px 0;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.efood-content .container .efood-details-data .efood-slide img {
+    width: 100%;
+}
+
+.efood-content .container .efood-details-data p{
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.efood-content .container .efood-details-data p a strong ,.efood-content .container .efood-details-data p strong a {
+    color: var(--main-color);
+}
+
+/* start media queres  */
+
+/* start small screen */
+@media screen and (max-width:576px) {
+    .efood-content {
+        margin:  0;
+    }
+
+    .efood-content .container .efood-details-header h1 {
+        font-size: 18px;
+        margin: 0 5px;
+    }
+
+    .efood-content .container .efood-details-bg {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .efood-content .container .efood-details-data .efood-slide {
+        max-width: 100%;
+    }
+
+}
+
+/* end small screen */
+/* start medium screen */
+@media screen and (min-width:577px) and (max-width:768px) {
+    .efood-content {
+        margin: 5px 0;
+    }
+
+    .efood-content .container .efood-details-header h1 {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    .efood-content .container .efood-details-bg {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .efood-content .container .efood-details-data .efood-slide {
+        max-width: 100%;
+    }
+}
+/* end medium screen */
+/* start large screen */
+@media screen and (min-width:769px) and (max-width:992px) {
+    .efood-content {
+        margin: 5px 0;
+    }
+
+    .efood-content .container .efood-details-header h1 {
+        font-size: 25px;
+        margin: 0 5px;
+    }
+}
+/* end large screen */
+/* end media queres*/
+
+/*================================================
 Testimonials Area CSS
 =================================================*/
 
