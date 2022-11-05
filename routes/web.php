@@ -56,6 +56,7 @@ Route::get('lang/{lang}', function ($lang) {
 
 Route::get('/link', function () {
     Artisan::call('storage:link');
+    return redirect()->back();
 });
 Route::get('/cached', function () {
     Cache::forget('settings');
