@@ -54,5 +54,20 @@ return [
     'Let’s Talk' => 'تواصل معنا',
     'Ready to Get Started?' => 'على استعداد للبدء؟',
 
+    'It is a management system that supports multiple branches to deliver orders and comes with the user application, website and mandoob application, with this powerful system, you will get a powerful management panel built using one of the most powerful programming languages ​​that will help you to manage the entire system intelligently, which speeds up your business' => 'هو نظام إداره  يدعم الفروع المتعدده لتوصيل الطلبات ويأتى مع تطبيق المستخدم وموقع ويب وتطبيق المندوب , مع هذا النظام القوي , ستحصل على علي لوحة إدارة قوية مبنيه باستخدام لغة من اقوي لغات البرمجة والتي ستساعدك علي إدارة النظام بالكامل بذكاء مما يسرع من اعمالك ',
+    'What makes you buy?' => 'ما الذى يدفعك للشراء ؟',
+    'Clean &amp; Maintainable Coding Structure' => 'كود قوي ومنظم',
+    'Elegant, Clean &amp; Awesome UI Design' => 'تصميم انيق ومنظم وسهل الاستخدام',
+    'LTR &amp; RTL Supported' => 'يدعم اكثر من لغة',
+    'Complete Featured Website, User &amp; Delivery Man App' => 'سيستم متكامل من حيث الموقع او تطبيق اليوزر وتطبيق المندوب',
+    'Multi-branch with branch panel' => 'متعدد الفروع',
+    'Take away &amp; Home delivery both supported' => 'يدعم توصيل للمنازل او الاستلام من اى فروع',
+    'Delivery coverage area' => 'يدعم التحكم في منطقة تغطية توصيل الطلبات',
+    'Powerful Admin Panel' => 'لوحة إدارة قوية',
+    'Rich Analytics &amp; Reports' => 'تحليلات وتقارير قوية',
+    'Multiple Payment Gateway' => 'تدعم العديد من طرق الدفع',
+    'Chat, Coupon, Tracking, Review, Push Notification, etc. Pro Features ' => 'الدردشة ، القسيمة ، التتبع ، المراجعة ، الإشعارات ،والمزيد ',
+    'High-Level Support' => 'دعم فنى متواصل على مدار 24 ساعه',
+
 
 ];

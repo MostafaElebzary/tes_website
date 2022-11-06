@@ -40,5 +40,21 @@ return [
     'work process' => 'work process',
     'Let’s Talk' => 'Let’s Talk',
     'Ready to Get Started?' => 'Ready to Get Started?',
+    'It is a management system that supports multiple branches to deliver orders and comes with the user application, website and mandoob application, with this powerful system, you will get a powerful management panel built using one of the most powerful programming languages ​​that will help you to manage the entire system intelligently, which speeds up your business' => 'It is a management system that supports multiple branches to deliver orders and comes with the user application, website and mandoob application, with this powerful system, you will get a powerful management panel built using one of the most powerful programming languages ​​that will help you to manage the entire system intelligently, which speeds up your business',
+    'What makes you buy?' => 'What makes you buy?',
+    'Clean &amp; Maintainable Coding Structure' => 'Clean &amp; Maintainable Coding Structure',
+    'Elegant, Clean &amp; Awesome UI Design' => 'Elegant, Clean &amp; Awesome UI Design',
+    'LTR &amp; RTL Supported' => 'LTR &amp; RTL Supported',
+    'Complete Featured Website, User &amp; Delivery Man App' => 'Complete Featured Website, User &amp; Delivery Man App',
+    'Multi-branch with branch panel' => 'Multi-branch with branch panel',
+    'Take away &amp; Home delivery both supported' => 'Take away &amp; Home delivery both supported',
+    'Delivery coverage area' => 'Delivery coverage area',
+    'Powerful Admin Panel' => 'Powerful Admin Panel',
+    'Rich Analytics &amp; Reports' => 'Rich Analytics &amp; Reports',
+    'Multiple Payment Gateway' => 'Multiple Payment Gateway',
+    'Chat, Coupon, Tracking, Review, Push Notification, etc. Pro Features ' => 'Chat, Coupon, Tracking, Review, Push Notification, etc. Pro Features ',
+    'High-Level Support' => 'High-Level Support',
+    'More features Coming in the Next Release.' => 'More features Coming in the Next Release.',
+
 
 ];
