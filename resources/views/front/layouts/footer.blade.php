@@ -177,6 +177,57 @@
 
 @endif
 
+<script>
+
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    /** TO DISABLE SCREEN CAPTURE **/
+    document.addEventListener('keyup', (e) => {
+        if (e.key == 'PrintScreen') {
+            navigator.clipboard.writeText('');
+            alert('Screenshots disabled!');
+        }
+    });
+
+    /** TO DISABLE PRINTS WHIT CTRL+P **/
+    document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.key == 'p') {
+            alert('This section is not allowed to print or export to PDF');
+            e.cancelBubble = true;
+            e.preventDefault();
+            e.stopImmediatePropagation();
+        }
+    });
+
+    /** TO DISABLE PRINTS WHIT CTRL+U **/
+    document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.key == 'u') {
+            alert('This section is not allowed to see source code');
+            e.cancelBubble = true;
+            e.preventDefault();
+            e.stopImmediatePropagation();
+        }
+    });
+
+    document.onkeypress = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+    document.onmousedown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+    document.onkeydown = function (event) {
+        event = (event || window.event);
+        if (event.keyCode == 123) {
+            return false;
+        }
+    }
+
+</script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
