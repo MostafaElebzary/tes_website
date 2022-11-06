@@ -27,7 +27,7 @@
                 <h1>eFood - Food Delivery App with Laravel Admin Panel + Delivery Man App</h1>
             </div>
             <div class="efood-details-bg">
-                <img src="{{url('/')}}/assets/images/efood_images/image1.avif" alt="efood_details" class="w-100">
+                <img src="{{url('/')}}/assets/images/t_app_images/main_poster.png" alt="efood_details" class="w-100">
             </div>
             <div class="efood-details-data my-5">
                 <p><strong>eFood</strong> is a <strong>Multi Branch supported food delivery restaurant management
@@ -67,43 +67,43 @@
                         rel="nofollow">Delivery man app</a>
                 </p>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img2.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img2.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img3.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img3.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img4.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img4.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img5.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img5.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img6.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img6.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img7.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img7.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img8.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img8.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img9.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img9.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img10.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img10.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img11.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img11.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img12.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img12.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img13.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img13.png">
                 </div>
                 <div class="efood-slide">
-                    <img src="{{url('/')}}/assets/images/efood_images/img14.png">
+                    <img src="{{url('/')}}/assets/images/t_app_images/img14.png">
                 </div>
                 <p class="mt-3"><strong>User App Features-</strong></p>
                 <ol>

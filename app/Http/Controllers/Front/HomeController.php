@@ -55,9 +55,9 @@ class HomeController extends Controller
         $data['categories'] = Category::all();
         return view('front.pages.projects', $data);
     }
-    public function efood()
+    public function t_app()
     {
-        return view('front.pages.projects.efood');
+        return view('front.pages.projects.t_app');
     }
 
     public function about()

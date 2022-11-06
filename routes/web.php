@@ -29,7 +29,7 @@ Route::post('/contact', [HomeController::class, 'Contact_us']);
 Route::get('/site_map.xml', [HomeController::class, 'sitemap']);
 
 
-Route::get('/project/efood', [HomeController::class, 'efood']);
+Route::get('/project/t_app', [HomeController::class, 't_app']);
 
 //Route::get("site_map.xml", array(
 //    "as"   => "sitemap",
