@@ -8,13 +8,16 @@
         <div class="container">
             <div class="page-banner-content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500"
                  data-aos-once="true">
-                <h2>{{trans('lang.Projects')}}</h2>
+                <h2>T app</h2>
 
                 <ul>
                     <li>
                         <a href="/">{{trans('lang.Home')}}</a>
                     </li>
-                    <li>{{trans('lang.Projects')}}</li>
+                    <li>
+                        <a href="/projects">{{trans('lang.Projects')}}</a>
+                    </li>
+                    <li>T app</li>
                 </ul>
             </div>
         </div>
@@ -24,7 +27,7 @@
     <div class="efood-content py-2">
         <div class="container">
             <div class="efood-details-header my-5">
-                <h1>T APP</h1>
+{{--                <h1>T APP</h1>--}}
             </div>
             <div class="efood-details-bg">
                 <img src="{{url('/')}}/assets/images/t_app_images/main_poster.png" alt="efood_details" class="w-100">
