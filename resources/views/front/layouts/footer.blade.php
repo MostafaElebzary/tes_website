@@ -112,15 +112,14 @@
             </div>
         </div>
     </div>
-
     <div class="footer-shape-1">
-        <img src="assets/images/footer/footer-shape-3.png" alt="image">
+        <img src="{{url('/')}}/assets/images/footer/footer-shape-3.png" alt="image">
     </div>
     <div class="footer-shape-2">
-        <img src="assets/images/footer/footer-shape-3.png" alt="image">
+        <img src="{{url('/')}}/assets/images/footer/footer-shape-3.png" alt="image">
     </div>
     <div class="footer-shape-3">
-        <img src="assets/images/footer/footer-shape-3.png" alt="image">
+        <img src="{{url('/')}}/assets/images/footer/footer-shape-3.png" alt="image">
     </div>
 </footer>
 <!-- End Footer Area -->
