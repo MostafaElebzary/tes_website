@@ -344,14 +344,33 @@
                     </ul>
                 </div>
                 <ul class="sidebar-social-list">
-                    <li><a href="{{ settings_value("facebook")}}" target="_blank"><i class="ri-facebook-fill"></i></a>
-                    </li>
-                    <li><a href="{{ settings_value("twitter")}}" target="_blank"><i class="ri-twitter-fill"></i></a>
-                    </li>
-                    <li><a href="{{ settings_value("youtube")}}" target="_blank"><i class="ri-youtube-fill"></i></a>
-                    </li>
-                    <li><a href="{{ settings_value("instagram")}}" target="_blank"><i class="ri-instagram-fill"></i></a>
-                    </li>
+                    @if(settings_value("instagram") != '#')
+
+                        <li><a href="{{ settings_value("instagram")}}" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        </li>
+                    @endif
+                    @if(settings_value("linkedin") != '#')
+
+                        <li><a href="{{ settings_value("linkedin")}}" target="_blank"><i
+                                    class="ri-linkedin-fill"></i></a>
+                        </li>
+                    @endif
+
+                    @if(settings_value("twitter") != '#')
+
+                        <li><a href="{{ settings_value("twitter")}}" target="_blank"><i class="ri-twitter-fill"></i></a>
+                        </li>
+                    @endif
+                    @if(settings_value("youtube") != '#')
+
+                        <li><a href="{{ settings_value("youtube")}}" target="_blank"><i class="ri-youtube-fill"></i></a>
+                        </li>
+                    @endif
+                    @if(settings_value("instagram") != '#')
+
+                        <li><a href="{{ settings_value("instagram")}}" target="_blank"><i class="ri-instagram-fill"></i></a>
+                        </li>
+                    @endif
                 </ul>
                 <div class="contact-form">
                     <h3>{{trans('lang.Ready to Get Started?')}}</h3>

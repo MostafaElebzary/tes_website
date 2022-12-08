@@ -10,32 +10,42 @@
                                          alt="{{settings_value('logo_dark')}}"></a>
                     </div>
                     <p>{{ settings_value("footer_desc_".app()->getLocale())}}.</p>
-
                     <ul class="widget-social">
-                        <li>
-                            <a href="{{ settings_value("facebook")}}" target="_blank">
-                                <i class="ri-facebook-fill"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ settings_value("twitter")}}" target="_blank">
-                                <i class="ri-twitter-fill"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="{{ settings_value("youtube")}}" target="_blank">
-                                <i class="ri-youtube-fill"></i>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="{{ settings_value("instagram")}}" target="_blank">
-                                <i class="ri-instagram-fill"></i>
-                            </a>
-                        </li>
-
-
+                        @if(settings_value("linkedin") != '#')
+                            <li>
+                                <a href="{{ settings_value("linkedin")}}" target="_blank">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                            </li>
+                        @endif
+                        @if(settings_value("facebook") != '#')
+                            <li>
+                                <a href="{{ settings_value("facebook")}}" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                        @endif
+                        @if(settings_value("twitter") != '#')
+                            <li>
+                                <a href="{{ settings_value("twitter")}}" target="_blank">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </li>
+                        @endif
+                        @if(settings_value("youtube") != '#')
+                            <li>
+                                <a href="{{ settings_value("youtube")}}" target="_blank">
+                                    <i class="ri-youtube-fill"></i>
+                                </a>
+                            </li>
+                        @endif
+                        @if(settings_value("instagram") != '#')
+                            <li>
+                                <a href="{{ settings_value("instagram")}}" target="_blank">
+                                    <i class="ri-instagram-fill"></i>
+                                </a>
+                            </li>
+                        @endif
                     </ul>
                 </div>
             </div>
@@ -177,69 +187,69 @@
 
 @endif
 
-<script>
+{{--<script>--}}
 
-    document.addEventListener('contextmenu', event => event.preventDefault());
-    /** TO DISABLE SCREEN CAPTURE **/
-    document.addEventListener('keyup', (e) => {
-        if (e.key == 'PrintScreen') {
-            navigator.clipboard.writeText('');
-            alert('Screenshots disabled!');
-        }
-    });
+{{--    document.addEventListener('contextmenu', event => event.preventDefault());--}}
+{{--    /** TO DISABLE SCREEN CAPTURE **/--}}
+{{--    document.addEventListener('keyup', (e) => {--}}
+{{--        if (e.key == 'PrintScreen') {--}}
+{{--            navigator.clipboard.writeText('');--}}
+{{--            alert('Screenshots disabled!');--}}
+{{--        }--}}
+{{--    });--}}
 
-    /** TO DISABLE PRINTS WHIT CTRL+P **/
-    document.addEventListener('keydown', (e) => {
-        if (e.ctrlKey && e.key == 'p') {
-            alert('This section is not allowed to print or export to PDF');
-            e.cancelBubble = true;
-            e.preventDefault();
-            e.stopImmediatePropagation();
-        }
-    });
+{{--    /** TO DISABLE PRINTS WHIT CTRL+P **/--}}
+{{--    document.addEventListener('keydown', (e) => {--}}
+{{--        if (e.ctrlKey && e.key == 'p') {--}}
+{{--            alert('This section is not allowed to print or export to PDF');--}}
+{{--            e.cancelBubble = true;--}}
+{{--            e.preventDefault();--}}
+{{--            e.stopImmediatePropagation();--}}
+{{--        }--}}
+{{--    });--}}
 
-    /** TO DISABLE PRINTS WHIT CTRL+U **/
-    document.addEventListener('keydown', (e) => {
-        if (e.ctrlKey && e.key == 'u') {
-            alert('This section is not allowed to see source code');
-            e.cancelBubble = true;
-            e.preventDefault();
-            e.stopImmediatePropagation();
-        }
-    });
+{{--    /** TO DISABLE PRINTS WHIT CTRL+U **/--}}
+{{--    document.addEventListener('keydown', (e) => {--}}
+{{--        if (e.ctrlKey && e.key == 'u') {--}}
+{{--            alert('This section is not allowed to see source code');--}}
+{{--            e.cancelBubble = true;--}}
+{{--            e.preventDefault();--}}
+{{--            e.stopImmediatePropagation();--}}
+{{--        }--}}
+{{--    });--}}
 
-    document.onkeypress = function (event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            return false;
-        }
-    }
-    document.onmousedown = function (event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            return false;
-        }
-    }
-    document.onkeydown = function (event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            return false;
-        }
-    }
+{{--    document.onkeypress = function (event) {--}}
+{{--        event = (event || window.event);--}}
+{{--        if (event.keyCode == 123) {--}}
+{{--            return false;--}}
+{{--        }--}}
+{{--    }--}}
+{{--    document.onmousedown = function (event) {--}}
+{{--        event = (event || window.event);--}}
+{{--        if (event.keyCode == 123) {--}}
+{{--            return false;--}}
+{{--        }--}}
+{{--    }--}}
+{{--    document.onkeydown = function (event) {--}}
+{{--        event = (event || window.event);--}}
+{{--        if (event.keyCode == 123) {--}}
+{{--            return false;--}}
+{{--        }--}}
+{{--    }--}}
 
-</script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/6341c3ef37898912e96d9202/1geseao5s';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-</script>
+{{--</script>--}}
+{{--<!--Start of Tawk.to Script-->--}}
+{{--<script type="text/javascript">--}}
+{{--    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();--}}
+{{--    (function () {--}}
+{{--        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];--}}
+{{--        s1.async = true;--}}
+{{--        s1.src = 'https://embed.tawk.to/6341c3ef37898912e96d9202/1geseao5s';--}}
+{{--        s1.charset = 'UTF-8';--}}
+{{--        s1.setAttribute('crossorigin', '*');--}}
+{{--        s0.parentNode.insertBefore(s1, s0);--}}
+{{--    })();--}}
+{{--</script>--}}
 <!--End of Tawk.to Script-->
 
 @yield('js')
