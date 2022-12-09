@@ -19,6 +19,7 @@
         "laravel/telescope": "^4.9",
         "laravel/tinker": "^2.0",
         "nikaia/nova-rating-field": "^1.0",
+        "outl1ne/nova-sortable": "^2.4",
         "pdmfc/nova-inline-text": "^1.2",
         "pishran/nova-rtl-theme": "^1.5"
     },

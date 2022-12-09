@@ -8,10 +8,16 @@ use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Trix;
+//use Outl1ne\NovaSortable\Traits\HasSortableRows;
+use OptimistDigital\NovaSortable\Traits\HasSortableRows;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Project extends Resource
 {
+
+    use HasSortableRows;
+
+    public static $sortableCacheEnabled = false;
     /**
      * The model the resource corresponds to.
      *
@@ -62,7 +68,7 @@ class Project extends Resource
         return [
 
 
-            ID::make(__('ID'), 'id')->sortable(),
+//            ID::make(__('ID'), 'id')->sortable(),
             BelongsTo::make('Category', 'Category', Category::class)->rules('required'),
             Text::make(trans('lang.title_ar'), 'title_ar')->rules('required'),
             Text::make(trans('lang.title_en'), 'title_en')->rules('required'),
@@ -115,5 +121,13 @@ class Project extends Resource
     public function actions(Request $request)
     {
         return [];
+    }
+
+    public static function canSort(NovaRequest $request, $resource)
+    {
+        // Do whatever here, ie:
+        // return user()->isAdmin();
+        // return $resource->id !== 5;
+        return true;
     }
 }

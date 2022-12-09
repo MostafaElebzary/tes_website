@@ -6,11 +6,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\App;
 
-class Project extends Model
+use Spatie\EloquentSortable\Sortable;
+use Spatie\EloquentSortable\SortableTrait;
+
+class Project extends Model implements Sortable
 {
-    use HasFactory;
+    use HasFactory , SortableTrait;
 
-
+    public $sortable = [
+        'order_column_name' => 'sort_order',
+        'sort_when_creating' => true,
+        'nova_order_by' => 'ASC',
+    ];
 
     public function category(){
         return $this->belongsTo(Category::class);

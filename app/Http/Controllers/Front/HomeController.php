@@ -51,7 +51,7 @@ class HomeController extends Controller
     public function projects()
     {
         $data['title'] = trans('lang.Projects');
-        $data['projects'] = Project::with('category')->get();
+        $data['projects'] = Project::with('category')->orderBy('sort_order','asc')->get();
         $data['categories'] = Category::all();
         return view('front.pages.projects', $data);
     }
