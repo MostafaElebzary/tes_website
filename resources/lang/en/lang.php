@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'all' => "all",
     'url' => "url",
     'Home' => "Home",
     'Services' => "Services",

@@ -32,7 +32,7 @@
             </div>
 
             <ul class="projects-filter-menu">
-                <li class="filter" data-filter="all">All</li>
+                <li class="filter" data-filter="all">{{trans('lang.all')}}</li>
                 @foreach($categories as $category)
                 <li class="filter" data-filter=".cat-{{$category->id}}">{{$category->title}}</li>
 
