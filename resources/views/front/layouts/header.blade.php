@@ -355,6 +355,12 @@
                                     class="ri-linkedin-fill"></i></a>
                         </li>
                     @endif
+                        @if(settings_value("facebook") != '#')
+
+                        <li><a href="{{ settings_value("facebook")}}" target="_blank"><i
+                                    class="ri-facebook-fill"></i></a>
+                        </li>
+                    @endif
 
                     @if(settings_value("twitter") != '#')
 
