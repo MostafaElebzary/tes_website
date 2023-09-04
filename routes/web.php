@@ -17,25 +17,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['middleware' => ['maintanance']], function () {
 
-Route::get('/', [HomeController::class, 'home']);
-Route::get('/home', [HomeController::class, 'home']);
-Route::get('/services', [HomeController::class, 'services']);
-Route::get('/projects', [HomeController::class, 'projects']);
-Route::get('/about-us', [HomeController::class, 'about']);
-Route::get('/contact-us', [HomeController::class, 'contact']);
-Route::post('/subscribe', [HomeController::class, 'Subscribe']);
-Route::post('/contact', [HomeController::class, 'Contact_us']);
-Route::get('/site_map.xml', [HomeController::class, 'sitemap']);
+    Route::get('/', [HomeController::class, 'home']);
+    Route::get('/home', [HomeController::class, 'home']);
+    Route::get('/services', [HomeController::class, 'services']);
+    Route::get('/projects', [HomeController::class, 'projects']);
+    Route::get('/about-us', [HomeController::class, 'about']);
+    Route::get('/contact-us', [HomeController::class, 'contact']);
+    Route::post('/subscribe', [HomeController::class, 'Subscribe']);
+    Route::post('/contact', [HomeController::class, 'Contact_us']);
+    Route::get('/site_map.xml', [HomeController::class, 'sitemap']);
 
 
-Route::get('/project/t_app', [HomeController::class, 't_app']);
+    Route::get('/project/t_app', [HomeController::class, 't_app']);
 
 //Route::get("site_map.xml", array(
 //    "as"   => "sitemap",
 //    "uses" => "HomeController@sitemap", // or any other controller you want to use
 //));
-
+});
 Route::get('lang/{lang}', function ($lang) {
 
     if (session()->has('lang')) {
@@ -67,4 +68,8 @@ Route::get('/cached', function () {
 
     return redirect()->back();
 });
+
+Route::get('coming_soon', function () {
+    return view('errors.503');
+})->name('maintanance_route');
 
