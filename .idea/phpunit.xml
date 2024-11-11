@@ -5,6 +5,9 @@
       <list>
         <option value="$PROJECT_DIR$/tests/Unit" />
         <option value="$PROJECT_DIR$/tests/Feature" />
+        <option value="$PROJECT_DIR$/nova/tests/Controller" />
+        <option value="$PROJECT_DIR$/nova/tests/Feature" />
+        <option value="$PROJECT_DIR$/nova/tests/Unit" />
       </list>
     </option>
   </component>

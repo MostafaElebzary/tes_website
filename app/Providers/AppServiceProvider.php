@@ -8,7 +8,8 @@ use App\Models\Testimonials;
 use App\Models\WorkProcess;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-
+use \Illuminate\Support\Facades\Schema;
+use Illuminate\Support\Facades\Cache;
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -29,10 +30,18 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         app()->setLocale('ar');
+        if (Schema::hasTable('settings')) {
+            $globalSetting = Cache::get('settings');
+            if (!$globalSetting) {
+                $settings = Cache::rememberForever('settings', function () {
+                    return Setting::all();
+                });
 
-        View::share('settings', Setting::all());
-        View::share('testimonials', Testimonials::all());
-        View::share('work_process', WorkProcess::all());
-        View::share('teams', Team::all());
+                View::share(compact('settings',));
+            }
+            View::share('testimonials', Testimonials::all());
+            View::share('work_process', WorkProcess::all());
+            View::share('teams', Team::all());
+        }
     }
 }
